@@ -1,0 +1,11 @@
+.filter-button{
+    margin: 0 15px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 4px auto !important;
+}
+
+.my-test-slick .slick-list .slick-track .slick-slide:first-child{
+    border: 1px solid red !important;
+}
