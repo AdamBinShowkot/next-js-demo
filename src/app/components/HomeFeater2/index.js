@@ -1,0 +1,75 @@
+import React from 'react';
+import {
+    Card,
+    Button,
+    Col,
+    Row
+} from 'react-bootstrap';
+import Image from 'next/image';
+import './index.scss';
+
+const HomeFeatured=()=>{
+    return(
+        <>
+            <Col 
+            xs={6}
+            className="home-featured-container"
+            >
+                <Row
+                style={{
+                    display:'flex',
+                    justifyContent:'center',
+                    alignItems:'center'
+                }}
+                >
+                    <Col xs={6}>
+                        <h2>
+                        COSRX
+                        </h2>
+                        <span  className="normal-description">
+                        All About Snail Korean Skincare
+                        </span><br/><br/>
+                        <Button variant="outline-primary">Explore</Button>
+                    </Col>
+                    <Col xs={6}>
+                        <Image
+                        src='/featuredOne.jpg'
+                        height={411}
+                        width={411}
+                        />
+                    </Col>
+                </Row>
+            </Col>
+            <Col 
+            xs={6}
+            className="home-featured-container"
+            >
+                <Row
+                style={{
+                    display:'flex',
+                    justifyContent:'center',
+                    alignItems:'center'
+                }}
+                >
+                    <Col xs={6}>
+                        <h2>
+                        TIA'M –
+                        </h2>
+                        <span className="normal-description">
+                        All About Snail Korean Skincare
+                        </span><br/><br/>
+                        <Button variant="outline-primary">Explore</Button>
+                    </Col>
+                    <Col xs={6}>
+                        <Image
+                        src='/featuredTwo.jpg'
+                        height={411}
+                        width={411}
+                        />
+                    </Col>
+                </Row>
+            </Col>
+        </>
+    )
+}
+export default HomeFeatured;

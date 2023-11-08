@@ -1,0 +1,22 @@
+.card{
+    margin: 0 25px;
+}
+
+.card-button{
+    background-image: linear-gradient(to right, rgba(92, 51, 169, 1), rgba(232, 99, 154, 1));
+    border: none !important;
+    color: #fff;
+    padding: 5px 12px !important;
+}
+.product-card-button{
+    font-size: 12px;
+}
+.product-card-title{
+    color: rgba(232, 99, 154, 1);
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+.product-card-body{
+    padding: 40px 15px;
+}
