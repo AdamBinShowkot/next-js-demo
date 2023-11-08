@@ -11,6 +11,7 @@ import BannerTwo from './components/Banner2';
 import ItemsContainer from './components/Items';
 import BannerThree from './components/Banner3';
 import IsotopeReact from './components/ProductsFilter';
+import HomeBlogSection from './components/HomeBlogSection';
 
 export default function Home() {
   return (
@@ -57,6 +58,11 @@ export default function Home() {
       >
         <Col>
           <IsotopeReact/>
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={12}>
+          <HomeBlogSection/>
         </Col>
       </Row>
     </>

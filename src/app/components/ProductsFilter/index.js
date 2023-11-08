@@ -56,8 +56,20 @@ const IsotopeReact = () => {
                     width:"100%"
                 }}
                 >
+                    <Row>
+                        <Col 
+                        xs={12}
+                        style={{
+                            padding:'10px 0px',
+                            display:'flex',
+                            justifyContent:'center',
+                            alignItems:'center'
+                        }}
+                        >
+                            <h2>BEST <strong style={{color:'rgba(232, 99, 154, 1)'}}>BRAND</strong></h2>
+                        </Col>
+                    </Row>
                     <Row
-                   
                     >
                         <Col 
                         xs={12}
@@ -99,7 +111,7 @@ const IsotopeReact = () => {
                             className="filter-button"
                             onClick={handleFilterKeyChange('*')}
                             >
-                                ALL
+                                ALL BRAND
                             </Button>
                         </Col>
                     </Row>
