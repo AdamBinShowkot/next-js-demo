@@ -23,3 +23,31 @@
 .product-card-body{
     padding: 40px 15px;
 }
+
+.home-post-container{
+    border: none;
+    background-image:  linear-gradient(to bottom,rgba(92, 51, 169, 1) ,rgba(232, 99, 154, 1));
+}
+
+.blog-new-button{
+    padding: 2px 20px !important;
+    font-size: 12px;
+    background-color: rgba(255, 255, 50, 1);
+    border: none;
+    color: #000;
+}
+.blog-video-button{
+    // background-image:  linear-gradient(to right,rgba(255, 255, 255, 1) ,rgba(255, 255, 255, 0));
+    background-color: rgba(92, 51, 169, 0.35);
+    border: none;
+    //padding: 10px 20px;
+    width: 100%;
+}
+.video-btn-time{
+   position: absolute;
+   right: 25px; 
+   background-color: #fff;
+   color: #000;
+   border: none;
+   font-size: 11px;
+}
