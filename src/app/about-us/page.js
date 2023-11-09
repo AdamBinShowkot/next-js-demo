@@ -15,6 +15,8 @@ const AboutPage=()=>{
             className='about-us-container'
             >
                 <OurMission/>
+                <OurValues/>
+                <OurStory/>
             </Row>
         </>
     )

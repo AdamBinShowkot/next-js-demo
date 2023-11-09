@@ -26,7 +26,7 @@ const ContactAreaMain=()=>{
                         <strong className="footer-header">QUICK LINKS</strong><br/><br/>
                         <ul>
                             <li>
-                                <Link href="/">
+                                <Link href="/about-us">
                                     About Us
                                 </Link>
                             </li>
