@@ -5,6 +5,7 @@ import {
 } from 'react-bootstrap';
 import KeepTouch from './partials/KeepTouch';
 import GoogleMap from './partials/GoogleMap';
+import ContactForm from './partials/ContactForm';
 import './index.scss';
 
 const ContactPage=()=>{
@@ -16,6 +17,7 @@ const ContactPage=()=>{
                 <Col xs={12}>
                     <KeepTouch/>
                     <GoogleMap/>
+                    <ContactForm/>
                 </Col>
             </Row>
         </>
