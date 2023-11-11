@@ -12,15 +12,21 @@ const VideoProduct=({image})=>{
         <>
            <Row
            style={{
-            border:'1px solid grey',
-            width:"8rem"
+            //border:'1px solid grey',
+            //width:"8rem"
+            padding:"0px"
            }}
            >
                 <Col 
                 xs={12}
+                style={{
+                    padding:"0"
+                }}
                 >
                     <Row>
-                        <Col xs={12}>
+                        <Col
+                        xs={12}
+                        >
                             <Card
                             style={{
                                 width: '100px',
@@ -64,12 +70,11 @@ const VideoProduct=({image})=>{
                         xs={12}
                         style={{
                             textAlign:'left',
-                            padding:'10px'
+                            padding:'5px 15px'
                         }}
                         >
                             <span style={{fontSize:'11px'}}>
-                                Neogen Dermalogy Black<br/>
-                                Energy Cream 80ml
+                                Neogen Dermalogy.
                             </span>
                         </Col>
                     </Row>

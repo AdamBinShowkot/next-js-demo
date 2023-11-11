@@ -8,8 +8,8 @@ const NormalProduct=({image})=>{
         <>
             <Card
             style={{
-                width: '100px',
-                height:'120px',
+                width: '120px',
+                height:'130px',
                 backgroundImage:`url('/detailsSlider.png')`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: '100% 100%',

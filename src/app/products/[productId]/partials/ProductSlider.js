@@ -19,7 +19,7 @@ const ProductSlider=()=>{
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 4,
-        centerMode:true
+        centerMode:false
     };
     return(
         <>
