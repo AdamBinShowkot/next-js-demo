@@ -1,9 +1,18 @@
 import React from 'react';
+import {
+    Row,
+    Col
+} from 'react-bootstrap';
+import TopBanner from './TopBanner';
 
 const ProductsPage=()=>{
     return(
         <>
-            <h2>Products Pages</h2>
+            <Row>
+                <Col xs={12}>
+                    <TopBanner/>
+                </Col>
+            </Row>
         </>
     )
 }

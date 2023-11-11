@@ -6,7 +6,7 @@ import {
 import Image from 'next/image';
 import './index.scss';
 
-const ProductsLayout=({children})=>{
+const TopBanner=()=>{
     return(
         <>
             <Row
@@ -27,12 +27,7 @@ const ProductsLayout=({children})=>{
                     />
                 </Col>
             </Row>
-            <Row>
-                <Col xs={12}>
-                    {children}
-                </Col>
-            </Row>
         </>
     )
 }
-export default ProductsLayout;
+export default TopBanner;

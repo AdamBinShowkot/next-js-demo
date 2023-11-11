@@ -75,6 +75,12 @@ ul li{
   color: #000;
 }
 
+.save-off-button{
+  background-image: linear-gradient(to right,rgba(92, 51, 169, 1),rgba(232, 99, 154, 1));
+  border: none;
+  padding: 6px 20px;
+}
+
 /* .slick-dots{
   
   display: flex;
