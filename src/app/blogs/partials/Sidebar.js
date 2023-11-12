@@ -11,6 +11,7 @@ import {
 import Image from 'next/image';
 import './index.scss';
 import RecentSinglePost from './RecentSinglePost';
+import FeaturedImage from './FeatruedImage';
 
 const SidebarMain=()=>{
     return(
@@ -64,6 +65,17 @@ const SidebarMain=()=>{
                     <RecentSinglePost/>
                     <RecentSinglePost/>
                     <RecentSinglePost/>
+                </Col>
+            </Row>
+            <Row
+            style={{
+                padding:'20px 10px'
+            }}
+            >
+                <Col 
+                xs={12}
+                >
+                    <FeaturedImage/>
                 </Col>
             </Row>
         </>
