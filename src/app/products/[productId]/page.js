@@ -14,6 +14,7 @@ import VideoProduct from './partials/VideoProduct';
 import ProductSlider from './partials/ProductSlider';
 import StarComponent from './partials/StarComponent';
 import ProductDetails from './partials/ProductDetails';
+import CommentMain from './partials/CommentMain';
 import './index.scss';
 
 export default async function Page({params}){
@@ -255,6 +256,164 @@ export default async function Page({params}){
                             <ProductDetails/>
                         </Col>
                     </Row>
+                </Col>
+            </Row>
+            <hr className='product-details-hr'/>
+            <Row
+            style={{
+                padding:'0px 100px 20px'
+            }}
+            >
+                <Col 
+                xs={6}
+                >
+                    <Row
+                    // style={{
+                    //     display:'flex',
+                    //     justifyContent:'flex-start',
+                    //     alignItems:'center'
+                    // }}
+                    >
+                        <Col 
+                        xs={12}
+                        style={{
+                            display:'flex',
+                            justifyContent:'flex-start',
+                            alignItems:'center'
+                        }}
+                        >
+                            <StarComponent
+                            size={15}
+                            rate={4}
+                            />
+                            &nbsp; &nbsp;
+                            <span style={{fontSize:'11px'}}>12 review</span>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col 
+                        xs={12}
+                        style={{
+                            display:'flex',
+                            justifyContent:'flex-start',
+                            alignItems:'center',
+                            paddingTop:'8px'
+                        }}
+                        >
+                            <span style={{fontSize:'13px',color:'#8566bf'}}>0 Question\0 Answers</span>                            
+                        </Col>
+                    </Row>
+                </Col>
+                <Col 
+                xs={6}
+                >
+                    <InputGroup
+                    style={{
+                        display:'flex',
+                        justifyContent:'flex-end'
+                    }}
+                    >
+                        <InputGroupText
+                        className='product-details-comment-button'
+                        >
+                            <div
+                            style={{
+                                width:'20%',
+                                textAlign:'right'
+                            }}
+                            >
+                                <Image
+                                src="/details6.png"
+                                width={18}
+                                height={18}
+                                alt="search"
+                                />
+                            </div>
+                            <div
+                            style={{
+                                width:'100%',
+                                display:'flex',
+                                justifyContent:'center',
+                                alignItems:'center'
+                            }}
+                            >
+                                <div
+                                style={{
+                                    width:'80%',
+                                    
+                                }}
+                                >
+                                    <span
+                                    style={{
+                                        marginRight:'10px'
+                                    }}
+                                    >
+                                        Write A Review
+                                    </span>
+                                </div>
+                                
+                            </div>
+                        </InputGroupText>
+                    </InputGroup>
+                    <InputGroup
+                    style={{
+                        marginTop:'10px',
+                        display:'flex',
+                        justifyContent:'flex-end'
+                    }}
+                    >
+                        <InputGroupText
+                        className='product-details-comment-button'
+                        >
+                            <div
+                            style={{
+                                width:'20%',
+                                textAlign:'right'
+                            }}
+                            >
+                                <Image
+                                src="/details5.png"
+                                width={18}
+                                height={18}
+                                alt="search"
+                                />
+                            </div>
+                            <div
+                            style={{
+                                width:'100%',
+                                display:'flex',
+                                justifyContent:'center',
+                                alignItems:'center'
+                            }}
+                            >
+                                <div
+                                style={{
+                                    width:'80%',
+                                    
+                                }}
+                                >
+                                    <span
+                                    style={{
+                                        marginRight:'10px'
+                                    }}
+                                    >
+                                        Ask A Question
+                                    </span>
+                                </div>
+                            </div>
+                        </InputGroupText>
+                    </InputGroup>
+                </Col>
+            </Row>
+            <Row
+            style={{
+                padding:'20px 100px'
+            }}
+            >
+                <Col 
+                xs={12}
+                >
+                    <CommentMain/>
                 </Col>
             </Row>
         </>
