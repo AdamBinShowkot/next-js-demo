@@ -15,6 +15,7 @@ import ProductSlider from './partials/ProductSlider';
 import StarComponent from './partials/StarComponent';
 import ProductDetails from './partials/ProductDetails';
 import CommentMain from './partials/CommentMain';
+import FooterProductSlider from './partials/ProductsSlider';
 import './index.scss';
 
 export default async function Page({params}){
@@ -414,6 +415,15 @@ export default async function Page({params}){
                 xs={12}
                 >
                     <CommentMain/>
+                </Col>
+            </Row>
+            <Row
+            style={{
+                padding:'20px 100px 30px'
+            }}
+            >
+                <Col xs={12}>
+                    <FooterProductSlider/>
                 </Col>
             </Row>
         </>

@@ -23,7 +23,7 @@ const ListMain=()=>{
                             alignItems:'baseline'
                         }}
                         >
-                            <Image src="/avatar.png" circle />
+                            <Image src="/avatar.png" circle={true} />
                         </Col>
                         <Col xs={11}>
                             <Row>

@@ -31,7 +31,7 @@ const CommentMain=()=>{
                             display:'flex',
                             justifyContent:'center',
                             alignItems:'center',
-                            padding:'20px 0px'
+                            padding:'40px 0px 20px'
                         }}
                         >
                             <Pagination>
