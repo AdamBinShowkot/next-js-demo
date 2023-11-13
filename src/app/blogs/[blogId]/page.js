@@ -8,6 +8,7 @@ import BlogCard from '../partials/BlogCard';
 import './index.scss'
 import Image from 'next/image';
 import CommentsArea from './partials/CommentsArea';
+import CommentFormArea from './partials/CommentForm';
 
 const BlogDetails=({params})=>{
     //console.log(params)
@@ -266,6 +267,11 @@ const BlogDetails=({params})=>{
                     className='blog-details-inner-cntainer'
                     >
                         <CommentsArea/>
+                    </Row>
+                    <Row
+                    className='blog-details-inner-cntainer'
+                    >
+                        <CommentFormArea/>
                     </Row>
                 </Col>
             </Row>

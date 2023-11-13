@@ -51,7 +51,7 @@ const ContactAreaMain=()=>{
                         <strong className="footer-header">Service</strong><br/><br/>
                         <ul>
                             <li>
-                                <Link href="/">
+                                <Link href="/blogs">
                                     Blog
                                 </Link>
                             </li>
