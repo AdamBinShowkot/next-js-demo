@@ -78,10 +78,10 @@ const CommentsArea=()=>{
                             }}
                             >
                                 <span>
-                                    I absolutely love the Ultra-Rich Moisturize Cream and I use it every night and I've seen a huge difference in my skin! Who needs botox?? 
-                                    It's hydrating, moisturizing and leaves your skin with the most radiant glow! 
+                                    I absolutely love the Ultra-Rich Moisturize Cream and I use it every night and I&apos;ve seen a huge difference in my skin! Who needs botox?? 
+                                    It&apos;s hydrating, moisturizing and leaves your skin with the most radiant glow! 
                                     My pigmentation has gotten better since using this whole Anti-aging brightening line! 
-                                    It smells and feels DIVINE!! So luxurious! My skRead more about review stating Delicious!in looks smooth, clear and youthful and I'm SO impressed and grateful.
+                                    It smells and feels DIVINE!! So luxurious! My skRead more about review stating Delicious!in looks smooth, clear and youthful and I&apos;m SO impressed and grateful.
                                 </span>
                                 <br/>
                                 <hr  className='comments-hr'/>
@@ -119,8 +119,8 @@ const CommentsArea=()=>{
                                             }}
                                             >
                                                 <span>
-                                                    I absolutely love the Ultra-Rich Moisturize Cream and I use it every night and I've seen a huge difference in my skin! Who needs botox?? 
-                                                    It's hydrating, moisturizing and leaves your skin with the most radiant glow!
+                                                    I absolutely love the Ultra-Rich Moisturize Cream and I use it every night and I&apos;ve seen a huge difference in my skin! Who needs botox?? 
+                                                    It&apos;s hydrating, moisturizing and leaves your skin with the most radiant glow!
                                                 </span>
                                             </Col>
                                         </Row>
@@ -161,8 +161,8 @@ const CommentsArea=()=>{
                                             }}
                                             >
                                                 <span>
-                                                    I absolutely love the Ultra-Rich Moisturize Cream and I use it every night and I've seen a huge difference in my skin! Who needs botox?? 
-                                                    It smells and feels DIVINE!! So luxurious! My skRead more about review stating Delicious!in looks smooth, clear and youthful and I'm SO impressed and grateful.
+                                                    I absolutely love the Ultra-Rich Moisturize Cream and I use it every night and I&apos;ve seen a huge difference in my skin! Who needs botox?? 
+                                                    It smells and feels DIVINE!! So luxurious! My skRead more about review stating Delicious!in looks smooth, clear and youthful and I&apos;m SO impressed and grateful.
                                                 </span>
                                             </Col>
                                         </Row>
@@ -225,10 +225,10 @@ const CommentsArea=()=>{
                             }}
                             >
                                 <span>
-                                    I absolutely love the Ultra-Rich Moisturize Cream and I use it every night and I've seen a huge difference in my skin! Who needs botox?? 
-                                    It's hydrating, moisturizing and leaves your skin with the most radiant glow! 
+                                    I absolutely love the Ultra-Rich Moisturize Cream and I use it every night and I&apos;ve seen a huge difference in my skin! Who needs botox?? 
+                                    It&apos;s hydrating, moisturizing and leaves your skin with the most radiant glow! 
                                     My pigmentation has gotten better since using this whole Anti-aging brightening line! 
-                                    It smells and feels DIVINE!! So luxurious! My skRead more about review stating Delicious!in looks smooth, clear and youthful and I'm SO impressed and grateful.
+                                    It smells and feels DIVINE!! So luxurious! My skRead more about review stating Delicious!in looks smooth, clear and youthful and I&apos;m SO impressed and grateful.
                                 </span>
                             </Col>
                         </Row>

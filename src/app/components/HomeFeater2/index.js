@@ -54,7 +54,7 @@ const HomeFeatured=()=>{
                 >
                     <Col xs={6}>
                         <h2>
-                        TIA'M –
+                        TIA&apos;M –
                         </h2>
                         <span className="normal-description">
                         All About Snail Korean Skincare
