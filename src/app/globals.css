@@ -81,6 +81,12 @@ ul li{
   padding: 6px 20px;
 }
 
+/*** COTACT FORM && COMMNET FORM CSS***/
+.contact-form .form-control{
+  background-color: rgba(0, 0, 0, 0.06);
+  border: none;
+}
+
 /* .slick-dots{
   
   display: flex;

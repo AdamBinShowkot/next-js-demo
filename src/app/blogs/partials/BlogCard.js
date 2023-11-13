@@ -21,7 +21,7 @@ const BlogCard=()=>{
                 <Row
                 style={{
                     width: '100%',
-                    minHeight:'205px',
+                    minHeight:'170px',
                     backgroundImage:`url('/blogImage.png')`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: '100% 100%'

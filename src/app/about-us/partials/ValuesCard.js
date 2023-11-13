@@ -30,6 +30,7 @@ const ValuesCard=({image,title,description})=>{
                             src={`/${image?image:'values1.png'}`}
                             height={50}
                             width={50}
+                            alt=""
                             style={{
                                 textAlign:'center'
                             }}

@@ -23,6 +23,7 @@ const RecentSinglePost=()=>{
                     src='/blogFeatured.png'
                     height={100}
                     width={75}
+                    alt=""
                     />
                 </Col>
                 <Col xs={8}>

@@ -45,7 +45,9 @@ const ContactForm=()=>{
                         <Col 
                         xs={12}
                         >
-                            <Form>
+                            <Form
+                            className='contact-form'
+                            >
                                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                     <Form.Label><sup>*</sup>{" "}Comments:</Form.Label>
                                     <Form.Control as="textarea" rows={3} />
@@ -54,19 +56,19 @@ const ContactForm=()=>{
                                     <Col xs={6}>
                                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea2">
                                             <Form.Label><sup>*</sup>{" "}Use your name:</Form.Label>
-                                            <Form.Control type="text" placeholder="Enter email" />
+                                            <Form.Control type="text" placeholder="" />
                                         </Form.Group>
                                     </Col>
                                     <Col xs={6}>
                                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea3">
                                             <Form.Label><sup>*</sup>{" "}Email:</Form.Label>
-                                            <Form.Control type="email" placeholder="Enter email" />
+                                            <Form.Control type="email" placeholder="" />
                                         </Form.Group>
                                     </Col>
                                 </Row>
                                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea2">
                                     <Form.Label><sup>*</sup>{" "}Subject</Form.Label>
-                                    <Form.Control type="text" placeholder="Enter email" />
+                                    <Form.Control type="text" placeholder="" />
                                 </Form.Group>
                                 <Row
                                 style={{

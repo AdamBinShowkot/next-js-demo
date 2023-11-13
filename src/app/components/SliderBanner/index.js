@@ -52,6 +52,7 @@ const SliderBanner=()=>{
                             src={'/bsOne.png'}
                             width={1920}
                             height={440}
+                            alt=''
                             //style={{ width: '100%', height: 'auto' }}
                             />
                         </div>
@@ -65,6 +66,7 @@ const SliderBanner=()=>{
                             src={'/bsOne.png'}
                             width={1920}
                             height={440}
+                            alt=""
                             //style={{ width: '100%', height: 'auto' }}
                             />
                         </div>

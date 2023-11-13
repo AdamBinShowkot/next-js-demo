@@ -35,6 +35,7 @@ const ContactFormMain=()=>{
                         src='/messageBox.png'
                         height={40}
                         width={50}
+                        alt=""
                         style={{
                             marginRight:'10px'
                         }}

@@ -41,6 +41,7 @@ const StaticProducts=()=>{
                     src='/shopProduct.jpg'
                     height={350}
                     width={259}
+                    alt=""
                     />
                     <Button 
                     className='card-button'

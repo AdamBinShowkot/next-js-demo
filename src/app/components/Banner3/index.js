@@ -54,6 +54,7 @@ const BannerThree=()=>{
                             src='/femaleMakup.png'
                             height={70}
                             width={200}
+                            alt=""
                             />
                         </Col>
                         <Col 

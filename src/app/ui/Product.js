@@ -61,6 +61,7 @@ const Product=()=>{
                             src='/products2.jpg'
                             height={300}
                             width={259}
+                            alt=""
                             />
                         </Col>
                     </Row>

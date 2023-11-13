@@ -144,6 +144,7 @@ export default async function Page({params}){
                             src='/greenCheck.png'
                             height={20}
                             width={20}
+                            alt=""
                             />
                             <span><b style={{color:'green'}}>&nbsp;&nbsp; In Stock</b></span>
                         </Col>
@@ -163,6 +164,7 @@ export default async function Page({params}){
                             src='/qurier.png'
                             width={20}
                             height={20}
+                            alt=""
                             />
                             &nbsp;&nbsp;
                             <span>Free delivery from ৳45</span>
@@ -226,6 +228,7 @@ export default async function Page({params}){
                             height={20}
                             width={20}
                             alt="Love"
+                      
                             />
                             &nbsp;&nbsp;
                             <span><b>Add to Wishlist</b></span>

@@ -18,6 +18,7 @@ const ProductDetails=()=>{
                         src='/details1.png'
                         height={20}
                         width={20}
+                        alt=''
                         />
                         &nbsp;&nbsp;
                         Description
@@ -37,6 +38,7 @@ const ProductDetails=()=>{
                         src='/details2.png'
                         height={20}
                         width={20}
+                        alt=""
                         />
                         &nbsp;&nbsp;
                         Highlighted Ingredients
@@ -63,6 +65,7 @@ const ProductDetails=()=>{
                         src='/details3.png'
                         height={20}
                         width={20}
+                        alt=""
                         />
                         &nbsp;&nbsp;
                         How To Use
@@ -77,6 +80,7 @@ const ProductDetails=()=>{
                         src='/details4.png'
                         height={20}
                         width={20}
+                        alt=""
                         />
                         &nbsp;&nbsp;
                         Ingredients

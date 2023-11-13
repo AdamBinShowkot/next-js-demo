@@ -24,6 +24,7 @@ const TopBanner=()=>{
                     src='/femaleMakup.png'
                     height={80}
                     width={220}
+                    alt=""
                     />
                 </Col>
             </Row>

@@ -21,6 +21,7 @@ const BannerTwo=()=>{
                 src='/bannerTwo.jpg'
                 height={406}
                 width={1643}
+                alt=""
                 //style={{ width: '100vh', height: 'auto' }}
                 />
             </Col>

@@ -36,6 +36,7 @@ const HomeFeatured=()=>{
                         src='/featuredOne.jpg'
                         height={411}
                         width={411}
+                        alt=""
                         />
                     </Col>
                 </Row>
@@ -65,6 +66,7 @@ const HomeFeatured=()=>{
                         src='/featuredTwo.jpg'
                         height={411}
                         width={411}
+                        alt=""
                         />
                     </Col>
                 </Row>
