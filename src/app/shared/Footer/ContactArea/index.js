@@ -61,7 +61,7 @@ const ContactAreaMain=()=>{
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/">
+                                <Link href="/products">
                                     Products
                                 </Link>
                             </li>
