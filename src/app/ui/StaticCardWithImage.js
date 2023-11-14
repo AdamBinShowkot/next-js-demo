@@ -16,9 +16,9 @@ const StaticCardWithImage=()=>{
     return(
         <>
             <Card style={{ 
-                width: '14rem',
-                marginRight:'2rem !important',
-                minHeight:'25rem',
+                width: '19vw',
+                marginRight:'1vw !important',
+                minHeight:'26rem',
                 backgroundImage:`url('/filterFeatured.png')`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: '100% 100%'

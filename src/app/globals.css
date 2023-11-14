@@ -83,7 +83,38 @@ ul li{
   border: none;
   padding: 6px 20px;
 }
+.slider-previous-arrow-btn{
+  background-image: linear-gradient(to right,rgba(92, 51, 169, 1),rgba(232, 99, 154, 1)) !important;
+  /* padding: 6px !important; */
+  height: 32px !important;
+  width: 32px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-left: -60px !important;
+  border-radius: 50% !important;
+}
+.slick-prev:before, .slick-next:before{
+  font-size: 22px !important;
+  margin-top: 3px !important;
+}
 
+
+.slider-next-arrow-btn{
+  background-image: linear-gradient(to right,rgba(92, 51, 169, 1),rgba(232, 99, 154, 1)) !important;
+  /* padding: 6px !important; */
+  height: 32px !important;
+  width: 32px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-right: -80px !important;
+  border-radius: 50% !important;
+}
+.slick-prev:before, .slick-next:before{
+  font-size: 22px !important;
+  margin-top: 3px !important;
+}
 /*** COTACT FORM && COMMNET FORM CSS***/
 .contact-form .form-control{
   background-color: rgba(0, 0, 0, 0.06);

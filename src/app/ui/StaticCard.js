@@ -15,19 +15,20 @@ import Image from 'next/image';
 const StaticProducts=()=>{
     return(
         <>
-            <Card style={{ 
-                width: '11rem',
-                marginRight:'2rem !important',
+            <Card 
+            style={{ 
+                width: '14vw',
+                marginRight:'1vw !important',
                 minHeight:'26.4rem', 
-                }}>
-                {/* <Card.Img variant="top" src="/logo.png" /> */}
-                <Card.Body
-                style={{
-                    textAlign:'center'
+            }}>
+            {/* <Card.Img variant="top" src="/logo.png" /> */}
+            <Card.Body
+            style={{
+                textAlign:'center'
 
-                }}
-                className='product-card-body'
-                >
+            }}
+            className='product-card-body'
+            >
                     <Card.Title>
                         <h4 className='product-card-title'>
                             Online at Best Price

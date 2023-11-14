@@ -14,13 +14,37 @@ import "slick-carousel/slick/slick-theme.css";
 import './index.scss';
 import Image from 'next/image';
 
+
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className+` slider-next-arrow-btn`}
+        // style={{ ...style, display: "block", background: "red" }}
+        onClick={onClick}
+      />
+    );
+}
+  
+function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className+` slider-previous-arrow-btn`}
+        // style={{ ...style, display: "block", background: "green" }}
+        onClick={onClick}
+      />
+    );
+}
 const SliderProducts=()=>{
     const settings = {
         dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 5,
-        slidesToScroll: 3
+        slidesToScroll: 3,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
     };
     return(
         <>
@@ -51,28 +75,46 @@ const SliderProducts=()=>{
 
             <Row 
             style={{
-                padding:'40px 0px',
-                display:'flex'
+                padding:'20px 0px'
             }}
             >
-                <Product/>
-                <Product/>
-                <Product/>
-                <Product/>
-                <Product/>
+               <Col 
+               xs={12}
+               style={{
+                // padding:'40px 0px',
+                    display:'flex',
+                    justifyContent:'center',
+                    alignItems:'center'
+                }}
+               >
+                    <Product/>
+                    <Product/>
+                    <Product/>
+                    <Product/>
+                    <Product/>
+               </Col>
            </Row>
 
-           <Row 
+            <Row 
             style={{
-                padding:'40px 0px',
-                display:'flex'
+                padding:'20px 0px'
             }}
             >
-                <Product/>
-                <Product/>
-                <Product/>
-                <Product/>
-                <Product/>
+               <Col 
+               xs={12}
+               style={{
+                // padding:'40px 0px',
+                    display:'flex',
+                    justifyContent:'center',
+                    alignItems:'center'
+                }}
+               >
+                    <Product/>
+                    <Product/>
+                    <Product/>
+                    <Product/>
+                    <Product/>
+               </Col>
            </Row>
         </>
     )

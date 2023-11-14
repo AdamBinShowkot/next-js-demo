@@ -17,8 +17,8 @@ const Product=()=>{
         <>
             <Card 
             style={{ 
-                width: '11rem',
-                minHeight:'26.4rem',
+                width: '13vw',
+                minHeight:'28rem',
                 border:'none',
                 padding:'0'
             }}
@@ -28,7 +28,8 @@ const Product=()=>{
                 style={{
                     textAlign:'center',
                     position:'relative',
-                    padding:'0'
+                    padding:'0',
+                    minHeight:'26.4rem',
                 }}
                 className=''
                 >

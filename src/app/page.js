@@ -21,32 +21,42 @@ export default function Home() {
           <SliderBanner/>
         </Col>
       </Row>
-      <Container>
-        <Row>
-          <HomeFeatured/>
-        </Row>
-        <Row>
-          <ProductsSlider/>
-        </Row>
-        <Row>
-          <BannerTwo/>
-        </Row>
-        <Row>
-          <ItemsContainer title="CLEANSER "/>
-        </Row>
-        <Row>
-          <ItemsContainer title="TONER "/>
-        </Row>
-        <Row>
-          <ItemsContainer title="SERUM/ESSENCE/AMPOULE "/>
-        </Row>
-        <Row>
-          <ItemsContainer title="BODY CARE "/>
-        </Row>
-        <Row>
-          <ItemsContainer title="EYE CARE "/>
-        </Row>
-      </Container>
+      <Row
+      style={{
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center',
+        overflow:'hidden',
+        padding:"20px 8vw"
+      }}
+      >
+        <Col xs={12}>
+          <Row>
+            <HomeFeatured/>
+          </Row>
+          <Row>
+            <ProductsSlider/>
+          </Row>
+          <Row>
+            <BannerTwo/>
+          </Row>
+          <Row>
+            <ItemsContainer title="CLEANSER "/>
+          </Row>
+          <Row>
+            <ItemsContainer title="TONER "/>
+          </Row>
+          <Row>
+            <ItemsContainer title="SERUM/ESSENCE/AMPOULE "/>
+          </Row>
+          <Row>
+            <ItemsContainer title="BODY CARE "/>
+          </Row>
+          <Row>
+            <ItemsContainer title="EYE CARE "/>
+          </Row>
+        </Col>
+      </Row>
       <Row>
         <BannerThree/>
       </Row>

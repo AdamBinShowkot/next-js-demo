@@ -5,6 +5,7 @@ import {
 } from 'react-bootstrap';
 import Link from 'next/link';
 import BlogCard from './BlogCard';
+import PaginationMain from './Pagination';
 
 const BlogPosts=()=>{
     return(
@@ -59,6 +60,19 @@ const BlogPosts=()=>{
                     <Link href="/blogs/10">
                         <BlogCard/>
                     </Link>
+                </Col>
+            </Row>
+            <Row>
+                <Col 
+                xs={12}
+                style={{
+                    display:'flex',
+                    justifyContent:'center',
+                    alignItems:'center',
+                    padding:"30px 0px 0px 10px"
+                }}
+                >
+                    <PaginationMain/>
                 </Col>
             </Row>
         </>

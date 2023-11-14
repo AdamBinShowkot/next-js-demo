@@ -14,13 +14,36 @@ import "slick-carousel/slick/slick-theme.css";
 import './index.scss';
 import Image from 'next/image';
 
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className+` slider-next-arrow-btn`}
+        // style={{ ...style, display: "block", background: "red" }}
+        onClick={onClick}
+      />
+    );
+}
+  
+function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className+` slider-previous-arrow-btn`}
+        // style={{ ...style, display: "block", background: "green" }}
+        onClick={onClick}
+      />
+    );
+}
 const ItemsContainer=({title})=>{
     const settings = {
         dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 5,
-        slidesToScroll: 3
+        slidesToScroll: 3,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
     };
     return(
         <>

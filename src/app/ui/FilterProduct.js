@@ -17,8 +17,8 @@ const FilterProduct=()=>{
         <>
             <Card 
             style={{ 
-                width: '13rem',
-                minHeight:'25rem',
+                width: '16vw',
+                minHeight:'26rem',
                 border:'none',
                 padding:'0'
             }}

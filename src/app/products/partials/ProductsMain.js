@@ -16,7 +16,10 @@ const ProductsMain=()=>{
         <>
             <Row
             style={{
-                padding:'30px 80px'
+                padding:'30px 80px',
+                display:'flex',
+                justifyContent:'center',
+                alignItems:'center'
             }}
             >
                 <Col 
@@ -220,7 +223,9 @@ const ProductsMain=()=>{
                 xs={12}
                 style={{
                     padding:"40px 100px",
-                    display:'flex'
+                    display:'flex',
+                    justifyContent:'center',
+                    alignItems:'center'
                 }}
                 >
                     <Link href="/products/2">
@@ -246,7 +251,9 @@ const ProductsMain=()=>{
                 xs={12}
                 style={{
                     padding:"40px 100px",
-                    display:'flex'
+                    display:'flex',
+                    justifyContent:'center',
+                    alignItems:'center'
                 }}
                 >
                     <Link href="/products/2">
@@ -272,7 +279,9 @@ const ProductsMain=()=>{
                 xs={12}
                 style={{
                     padding:"40px 100px",
-                    display:'flex'
+                    display:'flex',
+                    justifyContent:'center',
+                    alignItems:'center'
                 }}
                 >
                     <Link href="/products/2">
@@ -298,7 +307,9 @@ const ProductsMain=()=>{
                 xs={12}
                 style={{
                     padding:"40px 100px",
-                    display:'flex'
+                    display:'flex',
+                    justifyContent:'center',
+                    alignItems:'center'
                 }}
                 >
                     <Link href="/products/2">
