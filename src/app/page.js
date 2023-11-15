@@ -26,18 +26,27 @@ export default function Home() {
         display:'flex',
         justifyContent:'center',
         alignItems:'center',
-        overflow:'hidden',
-        padding:"20px 8vw"
+       // overflow:'hidden',
+        padding:"20px 7.5vw"
       }}
       >
-        <Col xs={12}>
+        <Col 
+        xs={12}
+        style={{
+          padding:'0'
+        }}
+        >
           <Row>
             <HomeFeatured/>
           </Row>
           <Row>
             <ProductsSlider/>
           </Row>
-          <Row>
+          <Row
+          style={{
+            padding:'0'
+          }}
+          >
             <BannerTwo/>
           </Row>
           <Row>

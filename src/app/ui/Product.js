@@ -22,6 +22,7 @@ const Product=()=>{
                 border:'none',
                 padding:'0'
             }}
+            className='home-product'
             >
                 {/* <Card.Img variant="top" src="/logo.png" /> */}
                 <Card.Body

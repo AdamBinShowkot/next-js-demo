@@ -50,6 +50,10 @@ a,span{
 ul li{
   display: block !important;
 }
+
+/* .col-12{
+  padding: 0;
+} */
 .normal-input{
   height: 35px;
   line-height:14px;

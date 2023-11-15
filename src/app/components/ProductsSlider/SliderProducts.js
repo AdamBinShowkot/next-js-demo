@@ -48,13 +48,19 @@ const SliderProducts=()=>{
     };
     return(
         <>
-           <Row style={{padding:'40px 0px'}}>
+            <Row 
+            style={{
+                padding:'40px 0px',
+                display:'flex',
+                justifyContent:'center',
+                alignItems:'center',
+            }}>
                 <Col xs={12}>
                     <Slider {...settings}>
                         <div>
                             <StaticProducts/>
                         </div>
-                        <div >
+                        <div>
                             <Product/>
                         </div>
                         <div>
@@ -84,7 +90,8 @@ const SliderProducts=()=>{
                 // padding:'40px 0px',
                     display:'flex',
                     justifyContent:'center',
-                    alignItems:'center'
+                    alignItems:'center',
+                    padding:"0px"
                 }}
                >
                     <Product/>
@@ -106,7 +113,8 @@ const SliderProducts=()=>{
                 // padding:'40px 0px',
                     display:'flex',
                     justifyContent:'center',
-                    alignItems:'center'
+                    alignItems:'center',
+                    padding:'0'
                 }}
                >
                     <Product/>
