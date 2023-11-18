@@ -150,3 +150,52 @@ ul li{
   padding: 6px 12px;
   border-radius: 50% !important;
 }
+
+/***  Flat Button CSS ***/
+.fixed-button {
+  position: fixed;
+  bottom: 20%; /* Adjust the distance from the bottom as needed */
+  right: 0; /* Adjust the distance from the right as needed */
+/* Set the background color */
+  color: #fff; /* Set the text color */
+  /* border: none; */
+  /* border-radius: 5px; */
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 10000;
+  /* border:3px solid ; */
+  border: double 3px transparent;
+  /* border-radius: 5px !important; */
+  border-radius: 10px;
+  border-right: none;
+  overflow: hidden;
+  /* border-image:linear-gradient(to bottom, rgba(92, 51, 169, 1), rgba(232, 99, 154, 1)); */
+  background-image: linear-gradient( white,  white),linear-gradient(to bottom,  rgba(92, 51, 169, 1),  rgba(232, 99, 154, 1));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+/* Add hover effect if desired */
+
+
+.flat-button-top-area{
+  padding: 6px 20px 6px 6px;
+  background-color: rgba(25, 32, 56, 1);
+}
+.flat-button-footer-area{
+  padding: 0px 20px 0px 6px;
+  background-color: rgba(232, 99, 154, 1);
+}
+
+.fixed-button span{
+  color: #fff;
+  font-size: 12px;
+}
+
+
+/*** Normal class for justify align , content center***/
+.display-flex-justify-content-align-item-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

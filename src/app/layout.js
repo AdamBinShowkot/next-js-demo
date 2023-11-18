@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
 import HeaderMain from './shared/Header';
 import FooterMain from './shared/Footer';
+import FlatButton from './FlatButton';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
         <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" async ></script>
       </head>
       <body className={inter.className}>
+        <FlatButton/>
         <Container fluid>
           <HeaderMain/>
           {/* <Container> */}
