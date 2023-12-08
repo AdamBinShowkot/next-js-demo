@@ -258,15 +258,15 @@ const ProductsMain=async()=>{
                             ):""
                         }
                     </Row> */}
-                     {
-                            products?.length?(
-                                products.map((dta)=>{  
-                                return <Link href="/products/2" style={{margin:'20px 0px'}}>
-                                        <Product data={dta}/>
-                                    </Link>
-                                })
-                            ):""
-                        }
+                    {
+                        products?.length?(
+                            products.map((dta)=>{  
+                            return <Link href="/products/2" style={{margin:'20px 0px'}}>
+                                    <Product data={dta}/>
+                                </Link>
+                            })
+                        ):""
+                    }
                 </Col>
             </Row>
         </>
