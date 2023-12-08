@@ -10,8 +10,21 @@ import Product from '@/app/ui/Product';
 import PaginationMain from './Pagination';
 import './index.scss';
 import Link from 'next/link';
+import axios from 'axios';
+import ConfigureAxios from '../../../utils/axiosConfig'
 
-const ProductsMain=()=>{
+async function getProductLists(){
+    ConfigureAxios();
+    const response=axios.get('/product').then((res)=>{
+        if(res.status===201){
+            return res.data;
+        }
+    });
+
+    return response;
+}
+const ProductsMain=async()=>{
+    const products = await getProductLists();
     return(
         <>
             <Row
@@ -217,129 +230,43 @@ const ProductsMain=()=>{
                     </InputGroup>
                 </Col>
             </Row>
-            <Row
-            >
-                <Col 
-                xs={12}
-                style={{
-                    padding:"40px 100px",
-                    display:'flex',
-                    justifyContent:'center',
-                    alignItems:'center'
-                }}
-                >
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                </Col>
-            </Row>
-            <Row
-            >
-                <Col 
-                xs={12}
-                style={{
-                    padding:"40px 100px",
-                    display:'flex',
-                    justifyContent:'center',
-                    alignItems:'center'
-                }}
-                >
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                </Col>
-            </Row>
-            <Row
-            >
-                <Col 
-                xs={12}
-                style={{
-                    padding:"40px 100px",
-                    display:'flex',
-                    justifyContent:'center',
-                    alignItems:'center'
-                }}
-                >
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                </Col>
-            </Row>
-            <Row
-            >
-                <Col 
-                xs={12}
-                style={{
-                    padding:"40px 100px",
-                    display:'flex',
-                    justifyContent:'center',
-                    alignItems:'center'
-                }}
-                >
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                    <Link href="/products/2">
-                        <Product/>
-                    </Link>
-                </Col>
-            </Row>
             <Row>
                 <Col 
                 xs={12}
                 style={{
-                    padding:"0px 0px 30px 0px",
+                    padding:"40px 80px",
                     display:'flex',
-                    justifyContent:'center',
-                    alignItems:'center'
+                    justifyContent:'flex-start',
+                    alignItems:'center',
+                    flexWrap:'wrap',
+                    overflow:'hidden'
                 }}
                 >
-                    <PaginationMain/>
+                    {/* <Row>
+                        {
+                            products?.length?(
+                                products.map((dta)=>{  
+                                return <Col xs={3}
+                                style={{
+                                    margin:'20px 0px'
+                                }}>
+                                    <Link href="/products/2">
+                                        <Product data={dta}/>
+                                    </Link>
+                                </Col>
+                                })
+                            ):""
+                        }
+                    </Row> */}
+                     {
+                            products?.length?(
+                                products.map((dta)=>{  
+                                return <Link href="/products/2" style={{margin:'20px 0px'}}>
+                                        <Product data={dta}/>
+                                    </Link>
+                                })
+                            ):""
+                        }
                 </Col>
             </Row>
         </>

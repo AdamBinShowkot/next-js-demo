@@ -16,7 +16,6 @@ import HomeBlogSection from './components/HomeBlogSection';
 export default function Home() {
   return (
     <>
-
       <Row>
         <Col>
           <SliderBanner/>
