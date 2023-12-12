@@ -261,12 +261,25 @@ const ProductsMain=async()=>{
                     {
                         products?.length?(
                             products.map((dta)=>{  
-                            return <Link href="/products/2" style={{margin:'20px 0px'}}>
+                            return <Link key={dta.id} href="/products/2" style={{margin:'20px 0px'}}>
                                     <Product data={dta}/>
                                 </Link>
                             })
                         ):""
                     }
+                </Col>
+            </Row>
+            <Row>
+                <Col 
+                xs={12}
+                style={{
+                    padding:"0px 0px 30px 0px",
+                    display:'flex',
+                    justifyContent:'center',
+                    alignItems:'center'
+                }}
+                >
+                    <PaginationMain/>
                 </Col>
             </Row>
         </>

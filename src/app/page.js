@@ -4,6 +4,8 @@ import {
   Col,
   Container
 } from 'react-bootstrap';
+import ConfigureAxios from '@/utils/axiosConfig';
+import axios from 'axios';
 import SliderBanner from './components/SliderBanner';
 import HomeFeatured from './components/HomeFeater2';
 import ProductsSlider from './components/ProductsSlider';
@@ -13,7 +15,19 @@ import BannerThree from './components/Banner3';
 import IsotopeReact from './components/ProductsFilter';
 import HomeBlogSection from './components/HomeBlogSection';
 
-export default function Home() {
+async function getBodyCareLists(){
+  ConfigureAxios();
+  const response=axios.get('/public/skin-concern/list?page=1&per_page=10').then((res)=>{
+      if(res.status===200){
+          return res.data?.data;
+      }
+  });
+
+  return response;
+}
+export default async function Home() {
+  const bodyCareDataLists= await getBodyCareLists();
+  //console.log(bodyCareDataLists)
   return (
     <>
       <Row>

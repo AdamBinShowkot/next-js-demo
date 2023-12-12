@@ -6,7 +6,10 @@ import {
     Row
 } from 'react-bootstrap';
 import Image from 'next/image';
+import ConfigureAxios from '@/utils/axiosConfig';
+import axios from 'axios';
 import './index.scss';
+
 
 const HomeFeatured=()=>{
     return(
