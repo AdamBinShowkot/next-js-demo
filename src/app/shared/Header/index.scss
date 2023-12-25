@@ -7,3 +7,16 @@
 .discount-container{
     background-image: linear-gradient(to right, rgba(92, 51, 169, 1), rgba(232, 99, 154, 1));
 }
+
+/*** RESPONSIVE AREA ***/
+@media only screen and (min-width:480px) {
+  .discount-container{
+    display: none;
+  }
+}
+
+@media only screen and (min-width:980px) {
+    .discount-container{
+        display: block;
+    }
+}

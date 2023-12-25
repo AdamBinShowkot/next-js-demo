@@ -199,3 +199,21 @@ ul li{
   justify-content: center;
   align-items: center;
 }
+
+/** Responsive area **/
+/*** RESPONSIVE AREA ***/
+@media only screen and (min-width:480px) {
+  
+}
+@media only screen and (min-width:768px) {
+
+}
+@media only screen and (min-width:980px) {
+ 
+}
+@media only screen and (min-width:1360px) {
+  
+}
+@media only screen and (min-width:1920px) {
+  
+}

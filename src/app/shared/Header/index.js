@@ -17,10 +17,14 @@ const HeaderMain=()=>{
                     >
                         <DiscountMain/>
                     </Row>
-                    <Row>
+                    <Row
+                    className='header-topbar'
+                    >
                         <TopBarMain/>
                     </Row>
-                    <Row>
+                    <Row
+                    className='header-navbar'
+                    >
                         <NavBarMain/>
                     </Row>
                 </Col>
