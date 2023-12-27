@@ -15,7 +15,8 @@ const HomeFeatured=()=>{
     return(
         <>
             <Col 
-            xs={6}
+            xs={12} 
+            xl={6}
             className="home-featured-container"
             >
                 <Row
@@ -25,16 +26,29 @@ const HomeFeatured=()=>{
                     alignItems:'center'
                 }}
                 >
-                    <Col xs={6}>
+                    <Col 
+                    xs={12} 
+                    xl={6}
+                    className='home-featured'
+                    >
                         <h2>
                         COSRX
                         </h2>
                         <span  className="normal-description">
                         All About Snail Korean Skincare
                         </span><br/><br/>
-                        <Button variant="outline-primary">Explore</Button>
+                        <Button 
+                        variant="outline-primary"
+                        className="home-featured-button"
+                        >
+                            Explore
+                        </Button>
                     </Col>
-                    <Col xs={6}>
+                    <Col 
+                    xs={12}
+                    xl={6}
+                    className='home-featured'
+                    >
                         <Image
                         src='/featuredOne.jpg'
                         height={411}
@@ -45,7 +59,8 @@ const HomeFeatured=()=>{
                 </Row>
             </Col>
             <Col 
-            xs={6}
+            xs={12} 
+            xl={6}
             className="home-featured-container"
             >
                 <Row
@@ -55,16 +70,29 @@ const HomeFeatured=()=>{
                     alignItems:'center'
                 }}
                 >
-                    <Col xs={6}>
+                    <Col 
+                    xs={12}
+                    xl={6}
+                    className='home-featured'
+                    >
                         <h2>
                         TIA&apos;M –
                         </h2>
                         <span className="normal-description">
                         All About Snail Korean Skincare
                         </span><br/><br/>
-                        <Button variant="outline-primary">Explore</Button>
+                        <Button 
+                        variant="outline-primary"
+                        className="home-featured-button"
+                        >
+                            Explore
+                        </Button>
                     </Col>
-                    <Col xs={6}>
+                    <Col 
+                    xs={12}
+                    xl={6}
+                    className='home-featured'
+                    >
                         <Image
                         src='/featuredTwo.jpg'
                         height={411}

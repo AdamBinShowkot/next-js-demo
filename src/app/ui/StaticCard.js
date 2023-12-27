@@ -17,7 +17,7 @@ const StaticProducts=()=>{
         <>
             <Card 
             style={{ 
-                width: '14vw',
+                width: '14rem',
                 marginRight:'1vw !important',
                 minHeight:'26.4rem', 
             }}>

@@ -50,7 +50,12 @@ a,span{
 ul li{
   display: block !important;
 }
-
+.home-page-inner-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px 7.5vw;
+}
 /* .col-12{
   padding: 0;
 } */
@@ -202,14 +207,24 @@ ul li{
 
 /** Responsive area **/
 /*** RESPONSIVE AREA ***/
-@media only screen and (min-width:480px) {
-  
+@media only screen and (max-width:480px) {
+  .home-page-inner-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:10px;
+  }
 }
 @media only screen and (min-width:768px) {
 
 }
 @media only screen and (min-width:980px) {
- 
+  .home-page-inner-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px 7.5vw;
+  }
 }
 @media only screen and (min-width:1360px) {
   

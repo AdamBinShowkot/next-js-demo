@@ -14,6 +14,7 @@ import ItemsContainer from './components/Items';
 import BannerThree from './components/Banner3';
 import IsotopeReact from './components/ProductsFilter';
 import HomeBlogSection from './components/HomeBlogSection';
+//import useSize from '@/hooks/useSize';
 
 async function getBodyCareLists(){
   ConfigureAxios();
@@ -26,8 +27,11 @@ async function getBodyCareLists(){
   return response;
 }
 export default async function Home() {
-  const bodyCareDataLists= await getBodyCareLists();
+  //const bodyCareDataLists= await getBodyCareLists();
   //console.log(bodyCareDataLists)
+  //const test = useSize();
+
+
   return (
     <>
       <Row>
@@ -36,13 +40,7 @@ export default async function Home() {
         </Col>
       </Row>
       <Row
-      style={{
-        display:'flex',
-        justifyContent:'center',
-        alignItems:'center',
-       // overflow:'hidden',
-        padding:"20px 7.5vw"
-      }}
+      className='home-page-inner-container'
       >
         <Col 
         xs={12}

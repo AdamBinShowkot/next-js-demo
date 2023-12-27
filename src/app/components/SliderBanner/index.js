@@ -28,7 +28,7 @@ const SliderBanner=()=>{
                 // minHeight:'280px',
                 overflow:'hidden',
             }}
-            //className='slide-image-row'
+            className='slide-image-row'
             >
                 <Col
                 style={{
@@ -52,7 +52,8 @@ const SliderBanner=()=>{
                             src={'/bsOne.png'}
                             width={1920}
                             height={440}
-                            alt=''
+                            alt="Slide Image"
+                            className='top-slide-image'
                             //style={{ width: '100%', height: 'auto' }}
                             />
                         </div>
@@ -66,7 +67,8 @@ const SliderBanner=()=>{
                             src={'/bsOne.png'}
                             width={1920}
                             height={440}
-                            alt=""
+                            alt="Slide Image"
+                            className='top-slide-image'
                             //style={{ width: '100%', height: 'auto' }}
                             />
                         </div>

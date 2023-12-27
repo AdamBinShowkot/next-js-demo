@@ -1,5 +1,8 @@
 'use client'
-import React from 'react';
+import React,{
+    useState,
+    useEffect
+} from 'react';
 import {
     Card,
     Row,
@@ -37,7 +40,7 @@ function SamplePrevArrow(props) {
     );
 }
 const SliderProducts=()=>{
-    const settings = {
+    const [settings,setSetting]=useState({
         dots: false,
         infinite: true,
         speed: 500,
@@ -45,7 +48,31 @@ const SliderProducts=()=>{
         slidesToScroll: 3,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
+    })
+    const [windowSize, setWindowSize] = useState([
+        window.innerHeight,
+        window.innerWidth,
+    ]);   
+    
+    useEffect(() => {
+        // window.addEventListener("resize", windowSizeHandler);
+    
+        // return () => {
+        //   window.removeEventListener("resize", windowSizeHandler);
+        // };
+    }, []);
+
+    const windowSizeHandler = () => {
+        if(window.innerWidth<420){
+            let newSettings={...settings,slidesToShow:2};
+            setSetting(newSettings)
+        }else{
+
+        }
+        setWindowSize([window.innerWidth, window.innerHeight]);
     };
+
+    console.log(windowSize)
     return(
         <>
             <Row 
