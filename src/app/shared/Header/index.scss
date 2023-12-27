@@ -7,16 +7,40 @@
 .discount-container{
     background-image: linear-gradient(to right, rgba(92, 51, 169, 1), rgba(232, 99, 154, 1));
 }
+.header-topbar{
+  display: block;
+}
+.mobile-header{
+  display: none;
+}
 
 /*** RESPONSIVE AREA ***/
-@media only screen and (min-width:480px) {
+@media only screen and (min-width:360px) {
   .discount-container{
     display: none;
+  }
+  .header-navbar{
+    display: none;
+  }
+  .header-topbar{
+    display: none;
+  }
+  .mobile-header{
+    display: block;
   }
 }
 
 @media only screen and (min-width:980px) {
     .discount-container{
-        display: block;
+      display: block;
+    }
+    .header-navbar{
+      display: block;
+    }
+    .header-topbar{
+      display: block;
+    }
+    .mobile-header{
+      display: none;
     }
 }

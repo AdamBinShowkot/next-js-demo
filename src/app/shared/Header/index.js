@@ -4,6 +4,7 @@ import DiscountMain from './Discount';
 import TopBarMain from './TopBar';
 import NavBarMain from './NavBar';
 import './index.scss';
+import MobileHeader from './Mobile/MobileHeader';
 
 const HeaderMain=()=>{
     return(
@@ -26,6 +27,11 @@ const HeaderMain=()=>{
                     className='header-navbar'
                     >
                         <NavBarMain/>
+                    </Row>
+                    <Row
+                    className='mobile-header'
+                    >
+                        <MobileHeader/>
                     </Row>
                 </Col>
             </Row>

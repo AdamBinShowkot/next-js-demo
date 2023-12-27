@@ -3,7 +3,10 @@ import './globals.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import Row from 'react-bootstrap/Row'
+import {
+  Row,
+  Col
+} from 'react-bootstrap'
 import Container from 'react-bootstrap/Container'
 import HeaderMain from './shared/Header';
 import FooterMain from './shared/Footer';
@@ -28,10 +31,18 @@ export default function RootLayout({ children }) {
           <HeaderMain/>
           {/* <Container> */}
             
+          <Row>
+            <Col 
+            style={{
+              overflow:'hidden'
+            }}>
               {children}
+            </Col>
+          </Row>
         
           {/* </Container> */}
           <FooterMain/>
+          
         </Container>
       </body>
     </html>

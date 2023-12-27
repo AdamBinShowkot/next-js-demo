@@ -1,79 +1,52 @@
-import React from 'react';
 import {
-    Col,
-    Container,
     Row,
-    FormControl,
-    InputGroup,
-    InputGroupText,
-    Form,
+    Col,
     Button
 } from 'react-bootstrap';
-import './index.scss'
 import Image from 'next/image';
 import HeaderSearchInput from '../shared/HeaderSearchInput';
+import './index.scss';
 
-const TopBarMain=()=>{
+const MobileHeader=()=>{
     return(
         <>
-            <Col
-            className='top-bar-container'
+            <Col 
+            sm={12}
             >
                 <Row
-                style={{
-                    justifyContent:'center',
-                    display:'flex',
-                    alignItems:'center'
-                }}
+                className='mobile-header-top-container'
                 >
-                    <Col 
-                    xs={3} 
-                    className='logo-div'
-                    >
-                        <Image
-                        src="/shop-logo.png"
-                        width={250}
-                        height={100}
-                        alt="Picture of the author"
-                        />
-                    </Col>
-                    <Col 
-                    xs={5}
-                    >
-                        <HeaderSearchInput/>
-                    </Col>
                     <Col 
                     xs={2}
                     style={{
                         textAlign:'right'
                     }}
                     >
-                        <Button
-                        className='user-button'
-                        >
-                            <Image
-                            src="/user.png"
-                            width={16}
-                            height={16}
-                            alt="search"
-                            />
-                        </Button>
-
-                        <Button
-                        className='user-button'
-                        style={{
-                            marginLeft:'10px'
-                        }}
-                        >
-                            <Image
-                            src="/cart.png"
-                            width={20}
-                            height={20}
-                            alt="search"
-                            />
-                        </Button>
+                        <Image
+                        src="/mobile_menu.png"
+                        width={60}
+                        height={60}
+                        className='mobile-humberger-menu'
+                        alt="Picture of the author"
+                        />
                     </Col>
-                    <Col xs={2}>
+                    <Col 
+                    xs={6}
+                    >
+                        <Image
+                        src="/shop-logo.png"
+                        width={250}
+                        height={100}
+                        className='mobile-shoap-logo'
+                        alt="Picture of the author"
+                        />
+                    </Col>
+                    <Col 
+                    xs={4}
+                    style={{
+                        display:'flex'
+                    }}
+                    >
                         <Button
                         className='normal-social-button'
                         >
@@ -107,8 +80,18 @@ const TopBarMain=()=>{
                         </Button>
                     </Col>
                 </Row>
+                <Row>
+                    <Col 
+                    sm={12}
+                    style={{
+                        padding:'4px 10% 10px'
+                    }}
+                    >
+                        <HeaderSearchInput/>
+                    </Col>
+                </Row>
             </Col>
         </>
     )
 }
-export default TopBarMain;
+export default MobileHeader;
