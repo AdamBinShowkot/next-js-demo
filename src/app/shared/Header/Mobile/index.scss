@@ -19,11 +19,21 @@
     position: fixed;
     bottom: 0;
     display: none;
-    height: 50px;
+    height: 60px;
     width: 100vw;
     background: #fff;
     z-index: 50;
     border-top: 1px solid rgb(240, 237, 237);
+    .mobile-menu-column{
+        display: flex;
+        height: 60px;
+        justify-content: space-around;
+        align-items: center;
+        .mobile-menu-image{
+            height: 30px;
+            width: 30px;
+        }
+    }
 }
 
 

@@ -24,7 +24,8 @@ async function getProductLists(){
     return response;
 }
 const ProductsMain=async()=>{
-    const products = await getProductLists();
+    // const products = await getProductLists();
+    const products =[];
     return(
         <>
             <Row
