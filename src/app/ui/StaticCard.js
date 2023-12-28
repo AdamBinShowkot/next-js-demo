@@ -16,18 +16,14 @@ const StaticProducts=()=>{
     return(
         <>
             <Card 
-            style={{ 
-                width: '14rem',
-                marginRight:'1vw !important',
-                minHeight:'26.4rem', 
-            }}>
+            className='static-card-container'
+            >
             {/* <Card.Img variant="top" src="/logo.png" /> */}
             <Card.Body
             style={{
                 textAlign:'center'
-
             }}
-            className='product-card-body'
+            className='card-body'
             >
                     <Card.Title>
                         <h4 className='product-card-title'>
@@ -43,6 +39,7 @@ const StaticProducts=()=>{
                     height={350}
                     width={259}
                     alt=""
+                    className='image'
                     />
                     <Button 
                     className='card-button'

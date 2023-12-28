@@ -17,20 +17,14 @@ import ProductHover from './partials/ProuctHover';
 import './index.scss';
 
 
-const Product=()=>{
+const Product=({windowWidth})=>{
     const [hoverShow,setHoverShow]=useState(false);
 
 
     return(
         <>
             <Card 
-            style={{ 
-                width: '13vw',
-                minHeight:'28rem',
-                border:'none',
-                padding:'0'
-            }}
-            className='home-product'
+            className='home-product-container'
             onMouseEnter={()=>{
                 setHoverShow(true)
             }}
@@ -40,21 +34,10 @@ const Product=()=>{
             >
                 {/* <Card.Img variant="top" src="/logo.png" /> */}
                 <Card.Body
-                style={{
-                    textAlign:'center',
-                    position:'relative',
-                    padding:'0',
-                    minHeight:'26.4rem',
-                }}
-                className=''
+                className='product-card-body'
                 >
                     <Row
-                    style={{
-                        border:'1px solid rgba(232, 99, 154, 1)',
-                        borderRadius:'5px',
-                        marginBottom:'10px',
-                        width:"14.8vw"
-                    }}
+                    className='card-container'
                     >
                         <Col 
                         xs={12}
@@ -77,8 +60,9 @@ const Product=()=>{
                             <Image
                             src='/products2.jpg'
                             height={300}
-                            width={259}
+                            width={300}
                             alt=""
+                            className='image'
                             />
                         </Col>
                     </Row>

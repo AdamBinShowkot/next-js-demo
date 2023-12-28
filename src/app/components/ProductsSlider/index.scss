@@ -1,0 +1,19 @@
+.product-slider-container{
+    padding:40px 0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/*** RESPONSIVE AREA ***/
+@media only screen and (min-width:360px) {
+    .product-slider-container{
+        padding:40px 20px;
+    }
+}
+  
+@media only screen and (min-width:980px) {
+    .product-slider-container{
+        padding:40px 0px;
+    }
+}

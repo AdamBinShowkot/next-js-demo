@@ -10,6 +10,7 @@ import {
 import Container from 'react-bootstrap/Container'
 import HeaderMain from './shared/Header';
 import FooterMain from './shared/Footer';
+import MobileFooterMenu from './shared/Header/Mobile/MobileFooterMenu';
 import FlatButton from './FlatButton';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -42,7 +43,7 @@ export default function RootLayout({ children }) {
         
           {/* </Container> */}
           <FooterMain/>
-          
+          <MobileFooterMenu/>
         </Container>
       </body>
     </html>

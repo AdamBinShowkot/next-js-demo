@@ -11,6 +11,7 @@ import {
 } from 'react-bootstrap';
 import StaticProducts from '@/app/ui/StaticCard';
 import Product from '@/app/ui/Product';
+import useDeviceSize from '@/hooks/useDeviceSize';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -49,58 +50,64 @@ const SliderProducts=()=>{
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
     })
-    const [windowSize, setWindowSize] = useState([
-        window.innerHeight,
-        window.innerWidth,
-    ]);   
+    // const [windowSize, setWindowSize] = useState([
+    //     0,
+    //     0,
+    // ]); 
+    const [width, height] = useDeviceSize();  
     
     useEffect(() => {
-        // window.addEventListener("resize", windowSizeHandler);
-    
-        // return () => {
-        //   window.removeEventListener("resize", windowSizeHandler);
-        // };
-    }, []);
+        //console.log("Helooooo",width)
+        if(width<420){
 
-    const windowSizeHandler = () => {
-        if(window.innerWidth<420){
             let newSettings={...settings,slidesToShow:2};
             setSetting(newSettings)
         }else{
-
+            let newSettings={...settings,slidesToShow:5};
+            setSetting(newSettings)
         }
-        setWindowSize([window.innerWidth, window.innerHeight]);
-    };
+    
+        return () => {
+          
+        };
+    }, [width]);
 
-    console.log(windowSize)
+    // const windowSizeHandler = () => {
+    //     if(window.innerWidth<420){
+    //         let newSettings={...settings,slidesToShow:2};
+    //         setSetting(newSettings)
+    //     }else{
+
+    //     }
+    //     setWindowSize([window.innerWidth, window.innerHeight]);
+    // };
     return(
         <>
             <Row 
             style={{
-                padding:'40px 0px',
-                display:'flex',
-                justifyContent:'center',
-                alignItems:'center',
-            }}>
+                
+            }}
+            className='product-slider-container'
+            >
                 <Col xs={12}>
                     <Slider {...settings}>
                         <div>
                             <StaticProducts/>
                         </div>
                         <div>
-                            <Product/>
+                            <Product windowWidth={width}/>
                         </div>
                         <div>
-                            <Product/>
+                            <Product windowWidth={width}/>
                         </div>
                         <div>
-                            <Product/>
+                            <Product windowWidth={width}/>
                         </div>
                         <div>
-                            <Product/>
+                            <Product windowWidth={width}/>
                         </div>
                         <div>
-                            <Product/>
+                            <Product windowWidth={width}/>
                         </div>
                     </Slider>
                 </Col>

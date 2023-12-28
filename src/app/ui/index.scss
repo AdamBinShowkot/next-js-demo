@@ -1,7 +1,38 @@
-.home-product{
-    margin: 0 2.1vw;
+.static-card-container{
+    width:14rem;
+    margin-right:1vw !important;
+    min-height:28rem;
+    .card-body{
+        text-align:center;
+        position:relative;
+        padding:0;
+        min-height:28rem;
+        .image{
+            height: 19rem;
+            width: 16rem;
+        }
+    }
 }
-.home-product:hover{
+.home-product-container{
+    margin: 0 2.1vw;
+    width: 13vw;
+    min-height:28rem;
+    border:none;
+    padding:0;
+    .product-card-body{
+        text-align:center;
+        position:relative;
+        padding:0;
+        min-height:26.4rem;
+        .card-container{
+            border:1px solid rgba(232, 99, 154, 1);
+            border-radius:5px;
+            margin-bottom:10px;
+            width:14.8vw !important;
+        }
+    }
+}
+.home-product-container:hover{
     cursor: pointer;
     // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -137,3 +168,59 @@
 }
 
 /*** end hover card button area***/
+
+
+/*** RESPONSIVE AREA ***/
+@media only screen and (max-width:480px) {
+    .static-card-container{
+        width:40vw;
+        margin-right:1vw !important;
+        min-height:20rem;
+        .card-body{
+            text-align:center;
+            position:relative;
+            padding:0;
+            min-height:20.6rem;
+            .product-card-title{
+                font-size: 16px !important;
+                font-weight: 500;
+                font-style: italic;
+            }
+            .image{
+                height: 10rem;
+                width: 8rem;
+            }
+        }
+    }
+    .home-product-container{
+        width: 45vw;
+        min-height:20rem;
+        .product-card-body{
+            min-height:20.4rem;
+            .card-container{
+                width:45vw !important;
+            }
+        }
+    }
+}
+@media only screen and (min-width:768px) {
+  
+}
+@media only screen and (min-width:980px) {
+    .home-product-container{
+        width: 13vw;
+        min-height:28rem;
+        .product-card-body{
+            min-height:26.4rem;
+            .card-container{
+                width:14.8vw !important;
+            }
+        }
+    }
+}
+@media only screen and (min-width:1360px) {
+    
+}
+@media only screen and (min-width:1920px) {
+    
+}
