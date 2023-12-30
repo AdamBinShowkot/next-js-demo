@@ -208,16 +208,17 @@ ul li{
 /** Responsive area **/
 /*** RESPONSIVE AREA ***/
 @media only screen and (max-width:480px) {
+  
   .slider-next-arrow-btn{
     height: 28px !important;
     width: 28px !important;
-    margin-right: -45px !important;
+    margin-right: -90px !important;
     border-radius: 50% !important;
   }
   .slider-previous-arrow-btn{
     height: 28px !important;
     width: 28px !important;
-    margin-left: -20px !important;
+    margin-left: -40px !important;
     border-radius: 50% !important;
   }
   .home-page-inner-container{

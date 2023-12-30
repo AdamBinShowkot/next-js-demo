@@ -21,18 +21,10 @@ const BannerThree=()=>{
             >
                 <Container>
                     <Row
-                    style={{
-                        display:'flex',
-                        justifyContent:'center',
-                        alignItems:"center",
-                        height:'100px'
-                    }}
+                    className='banner-three-row'
                     >
                         <Col 
                         xs={4}
-                        style={{
-                            padding:'auto 30px'
-                        }}
                         >
                             <Button
                             className='banner-three-button'
@@ -42,13 +34,7 @@ const BannerThree=()=>{
                         </Col>
                         <Col 
                         xs={4}
-                        style={{
-                            padding:'auto 30px',
-                            textAlign:'center',
-                            justifyContent:'center',
-                            alignItems:'center',
-                            display:'flex'
-                        }}
+                        className='middle-column column'
                         >
                             <Image
                             src='/femaleMakup.png'
@@ -59,9 +45,7 @@ const BannerThree=()=>{
                         </Col>
                         <Col 
                         xs={4}
-                        style={{
-                            padding:'auto 30px'
-                        }}
+                        className='column'
                         >
                             <Button
                             className='banner-three-button'

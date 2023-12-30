@@ -118,46 +118,34 @@ const SliderProducts=()=>{
                 padding:'20px 0px'
             }}
             >
-               <Col 
-               xs={12}
-               style={{
-                // padding:'40px 0px',
-                    display:'flex',
-                    justifyContent:'center',
-                    alignItems:'center',
-                    padding:"0px"
-                }}
-               >
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-               </Col>
-           </Row>
+                <Col 
+                xs={12}
+                className='product-non-slide-container'
+                >
+                    <Product windowWisth={width}/>
+                    <Product windowWisth={width}/>
+                    <Product windowWisth={width}/>
+                    <Product windowWisth={width}/>
+                    <Product windowWisth={width}/>
+                </Col>
+            </Row>
 
             <Row 
             style={{
                 padding:'20px 0px'
             }}
             >
-               <Col 
-               xs={12}
-               style={{
-                // padding:'40px 0px',
-                    display:'flex',
-                    justifyContent:'center',
-                    alignItems:'center',
-                    padding:'0'
-                }}
-               >
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-                    <Product/>
-               </Col>
-           </Row>
+                <Col 
+                xs={12}
+                className='product-non-slide-container'
+                >
+                    <Product windowWisth={width}/>
+                    <Product windowWisth={width}/>
+                    <Product windowWisth={width}/>
+                    <Product windowWisth={width}/>
+                    <Product windowWisth={width}/>
+                </Col>
+            </Row>
         </>
     )
 }

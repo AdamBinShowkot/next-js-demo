@@ -54,13 +54,13 @@ export default async function Home() {
           <Row>
             <ProductsSlider/>
           </Row>
-          <Row
+          {/* <Row
           style={{
             padding:'0'
           }}
           >
             <BannerTwo/>
-          </Row>
+          </Row> */}
           <Row>
             <ItemsContainer title="CLEANSER "/>
           </Row>

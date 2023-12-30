@@ -87,12 +87,6 @@ const Product=({windowWidth})=>{
                         </Card.Text>
                         <Button 
                         className='card-button product-card-button'
-                        style={{
-                            position:'absolute',
-                            bottom:'5px',
-                            left:0,
-                            right:0
-                        }}
                         >
                             Add To Bag ৳ 2100 ৳ 1900
                         </Button>
