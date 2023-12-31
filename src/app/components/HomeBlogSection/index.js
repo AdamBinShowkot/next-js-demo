@@ -21,20 +21,12 @@ const HomeBlogSection=()=>{
         <>
             <Container>
                 <Row
-                style={{
-                    padding:'30px 0px 50px 0px'
-                }}
-                // style={{
-                //     display:'flex',
-                //     justifyContent:'center',
-                //     alignItems:'center'
-                // }}
+                className="home-blog-container"
                 >
                     <Col 
-                    xs={9}
-                    style={{
-                        padding:'6px'
-                    }}
+                    xs={12}
+                    xl={9}
+                    className="column-9"
                     >
                         <Row
                         style={{
@@ -207,10 +199,9 @@ const HomeBlogSection=()=>{
                         </Row>
                     </Col>
                     <Col 
-                    xs={3}
-                    style={{
-                        padding:'6px'
-                    }}
+                    xs={12}
+                    xl={3}
+                    className="column-3"
                     >
                         <Card
                         style={{ 
