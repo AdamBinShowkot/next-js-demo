@@ -5,6 +5,10 @@ import {
     Button,
     Row
 } from 'react-bootstrap';
+import AboutMain from './About';
+import QuickLinks from './QuickLinks';
+import ServiceMain from './Service';
+import ContactMain from './Contact';
 import Image from 'next/image';
 import Module from './index.module.css';
 
@@ -15,74 +19,10 @@ const ContactAreaMain=()=>{
             >
                 <Row
                 >
-                    <Col>
-                        <strong className="footer-header"><b>About</b></strong><br/><br/>
-                        <span>
-                            Korean Shop BD is the online platform, one of the largest retail supermarket in Bangladesh. 
-                            A business entity that’s defining the standards in innovation and service quality in the nation.
-                        </span>
-                    </Col>
-                    <Col>
-                        <strong className="footer-header">QUICK LINKS</strong><br/><br/>
-                        <ul>
-                            <li>
-                                <Link href="/about-us">
-                                    About Us
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/">
-                                    Information
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/">
-                                    Privacy Policy
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/">
-                                    Terms & Conditions
-                                </Link>
-                            </li>
-                        </ul>
-                    </Col>
-                    <Col>
-                        <strong className="footer-header">Service</strong><br/><br/>
-                        <ul>
-                            <li>
-                                <Link href="/blogs">
-                                    Blog
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/">
-                                    BRANDS
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/products">
-                                    Products
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/">
-                                    Skip Concern
-                                </Link>
-                            </li>
-                        </ul>
-                    </Col>
-                    <Col>
-                        <strong className="footer-header"><b>Service</b></strong><br/><br/>
-                        <span>
-                        Zigatola dhanmondi 1209
-                        </span><br/>
-                        <span>
-                        Email: koreanshop@gmail.com
-                        </span>
-                        <br/>
-                        <span>Hotline: +880170000000</span>
-                    </Col>
+                    <AboutMain/>
+                    <QuickLinks/>
+                    <ServiceMain/>
+                    <ContactMain/>
                 </Row>
                 <hr className={Module.hrStyle}/>
                 <Row>

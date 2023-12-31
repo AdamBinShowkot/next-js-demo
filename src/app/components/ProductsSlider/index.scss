@@ -31,7 +31,16 @@
 }
   
 @media only screen and (min-width:980px) {
+    .product-slider-container.row{
+        padding: 0px 0px 0px 18px !important;
+        *{
+            padding: auto;
+        }
+    }
     .product-slider-container{
         padding:40px 0px;
+    }
+    .product-non-slide-container{
+        padding: 0;
     }
 }
