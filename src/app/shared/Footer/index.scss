@@ -6,3 +6,16 @@
     padding: 60px 150px 20px;
     background-color: #fff;
 }
+
+/*** RESPONSIVE AREA ***/
+@media only screen and (min-width:360px) {
+    .footer-info{
+        padding: 60px 20px 20px;
+    }
+}
+  
+@media only screen and (min-width:980px) {
+    .footer-info{
+        padding: 60px 150px 20px;
+    }
+}

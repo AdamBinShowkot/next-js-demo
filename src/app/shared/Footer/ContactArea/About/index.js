@@ -14,13 +14,16 @@ import Content from './content';
 
 const AboutMain=({})=>{
     const [isContentShow,setIsContentShow]=useState(true);
+    const [isButtonShow,setIsButtonShow]=useState(false);
     const [width, height] = useDeviceSize();  
 
     useEffect(()=>{
         if(width<420){
-            setIsContentShow(false)
+            setIsContentShow(false);
+            setIsButtonShow(true);
         }else{
             setIsContentShow(true)
+            setIsButtonShow(false);
         }
     
         return () => {
@@ -30,19 +33,27 @@ const AboutMain=({})=>{
 
     return(
         <>
-            <Col className='footer-column'>
+            <Col 
+            className='footer-column'
+            xl={3}
+            xs={12}
+            >
                 <Row>
                     <Col
                     xs={12}
+                    xl={3}
                     className='inner-column'
                     >
                         <strong className="footer-header"><b>About</b></strong>
                         <Image
+                        onClick={()=>{
+                            setIsContentShow(!isContentShow)
+                        }}
                         src="/footer_plus.png"
                         width={16}
                         height={16}
                         alt="search"
-                        className={`${isContentShow?'hide image':'show image'}`}
+                        className={`${isButtonShow?'show image':'hide image'}`}
                         />
                     </Col>
                 </Row>

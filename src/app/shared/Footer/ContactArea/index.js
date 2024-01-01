@@ -26,10 +26,16 @@ const ContactAreaMain=()=>{
                     <ServiceMain/>
                     <ContactMain/>
                 </Row>
-                <hr className={Module.hrStyle}/>
-                <Row>
+                <hr 
+                //className={Module.hrStyle}
+                className="footer-hr-section"
+                />
+                <Row
+                className='footer-bottom-container'
+                >
                     <Col 
-                    xs={3}
+                    xl={3}
+                    xs={12}
                     style={{
                         textAlign:'left'
                     }}
@@ -67,16 +73,15 @@ const ContactAreaMain=()=>{
                         </Button>
                     </Col>
                     <Col 
-                    xs={6}
-                    style={{
-                        justifyContent:'center',
-                        textAlign:'center'
-                    }}
+                    xl={6}
+                    xs={12}
+                    className='footer-copyright-column'
                     >
                        <span>© 2023 Korean Shop BD | All Rights Reserved.</span> 
                     </Col>
                     <Col 
-                    xs={3}
+                    xl={3}
+                    xs={12}
                     style={{
                         textAlign:'right'
                     }}
