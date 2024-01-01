@@ -6,17 +6,31 @@ import React,{
 import { 
     Col 
 } from 'react-bootstrap';
+import useDeviceSize from '@/hooks/useDeviceSize';
 import Link from 'next/link';
 import Content from './Content';
 
 const ContactMain=()=>{
-    const [isShow,setIsShow]=useState(false);
+    const [isContentShow,setIsContentShow]=useState(true);
+    const [width, height] = useDeviceSize();  
+
+    useEffect(()=>{
+        if(width<420){
+            setIsContentShow(false)
+        }else{
+            setIsContentShow(true)
+        }
+    
+        return () => {
+          
+        };
+    },[width])
 
     return(
         <>
-            <Col>
-                <strong className="footer-header"><b>Contacts</b></strong><br/><br/>
-                <Content isShow={isShow}/>
+            <Col className='footer-column'>
+                <strong className="footer-header"><b>Contacts</b></strong>
+                <Content isContentShow={isContentShow}/>
             </Col>
         </>
     )

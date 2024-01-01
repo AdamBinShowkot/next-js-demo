@@ -3,19 +3,39 @@ import React,{
     useState,
     useEffect
 } from 'react';
-import { 
+import useDeviceSize from '@/hooks/useDeviceSize';
+import {
+    Row,
     Col 
 } from 'react-bootstrap';
 import Link from 'next/link';
 import './index.scss';
 
 const QuickLinks=()=>{
-    const [isShow,setIsShow]=useState(true);
+    const [isContentShow,setIsContentShow]=useState(true);
+    const [width, height] = useDeviceSize();  
+
+    useEffect(()=>{
+        if(width<420){
+            setIsContentShow(false)
+        }else{
+            setIsContentShow(true)
+        }
+    
+        return () => {
+          
+        };
+    },[width])
+
     return(
         <>
-            <Col>
-                <strong className="footer-header">QUICK LINKS</strong><br/><br/>
-                <ul className={`${isShow?'show-quick-links content':'hide-quick-links content'}`}>
+            <Col className='footer-column'>
+                <Row>
+                    <Col>
+                        <strong className="footer-header">QUICK LINKS</strong>
+                    </Col>
+                </Row>
+                <ul className={`${isContentShow?'show-quick-links content':'hide-quick-links content'}`}>
                     <li>
                         <Link href="/about-us">
                             About Us

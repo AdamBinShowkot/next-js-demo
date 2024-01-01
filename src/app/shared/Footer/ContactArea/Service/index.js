@@ -4,18 +4,37 @@ import React,{
     useEffect
 } from 'react';
 import Link from 'next/link';
+import useDeviceSize from '@/hooks/useDeviceSize';
 import { 
-    Col 
+    Col,
+    Row
 } from 'react-bootstrap';
 
 const ServiceMain=()=>{
-    const [isShow,setIsShow]=useState(true);
+    const [isContentShow,setIsContentShow]=useState(true);
+    const [width, height] = useDeviceSize();  
+
+    useEffect(()=>{
+        if(width<420){
+            setIsContentShow(false)
+        }else{
+            setIsContentShow(true)
+        }
+    
+        return () => {
+          
+        };
+    },[width])
 
     return(
         <>
-            <Col>
-                <strong className="footer-header">Service</strong><br/><br/>
-                <ul className={`${isShow?'show-service-content content':'hide-service-content content'}`}>
+            <Col className='footer-column'>
+                <Row>
+                    <Col>
+                        <strong className="footer-header">Service</strong>
+                    </Col>
+                </Row>
+                <ul className={`${isContentShow?'show-service-content content':'hide-service-content content'}`}>
                     <li>
                         <Link href="/blogs">
                             Blog

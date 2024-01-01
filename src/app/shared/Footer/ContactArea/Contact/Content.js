@@ -1,10 +1,10 @@
 import React from 'react';
 import './index.scss'
 
-const Content=({isShow})=>{
+const Content=({isContentShow})=>{
     return(
         <>
-            <p className={`${isShow?'show-contact-content content':'hide-contact-content content'}`}>
+            <p className={`${isContentShow?'show-contact-content content':'hide-contact-content content'}`}>
                 <span>
                 Zigatola dhanmondi 1209
                 </span><br/>

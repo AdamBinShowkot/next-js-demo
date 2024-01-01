@@ -1,0 +1,19 @@
+.footer-container{
+    .footer-column{
+        display: flex;
+        flex-direction: column;
+        .inner-column{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            .show.image{
+                display: block;
+                height: 16px;
+                width: 16px;
+            }
+            .hide.image{
+                display: none;
+            }
+        }
+    }
+}

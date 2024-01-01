@@ -11,6 +11,7 @@ import ServiceMain from './Service';
 import ContactMain from './Contact';
 import Image from 'next/image';
 import Module from './index.module.css';
+import './index.scss';
 
 const ContactAreaMain=()=>{
     return(
@@ -18,6 +19,7 @@ const ContactAreaMain=()=>{
             <Col
             >
                 <Row
+                className='footer-container'
                 >
                     <AboutMain/>
                     <QuickLinks/>
