@@ -102,7 +102,7 @@ export default async function Home() {
       // }}
       >
         <Col>
-          <IsotopeReact/>
+          <IsotopeReact lists={brandLists}/>
         </Col>
       </Row>
       <Row>

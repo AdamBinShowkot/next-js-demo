@@ -26,7 +26,7 @@ function getProductLists(){
     })
 }
 
-const IsotopeReact = () => {
+const IsotopeReact = ({lists}) => {
   const isotope = useRef()
   // store the filter keyword in a state
     const [filterKey, setFilterKey] = useState('*')
@@ -40,10 +40,10 @@ const IsotopeReact = () => {
 
     //     })
     // },[])
-    // useEffect(()=>{
-    //     console.log("Products : ",lists)
+    useEffect(()=>{
+        console.log("Products : ",lists)
        
-    // },[lists])
+    },[lists])
   // initialize an Isotope object with configs
   useEffect(() => {
     isotope.current = new Isotope('.filter-container', {
