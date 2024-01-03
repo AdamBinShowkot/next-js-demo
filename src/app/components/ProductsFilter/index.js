@@ -10,16 +10,40 @@ import {
     Button,
     Container
 } from 'react-bootstrap';
+import ConfigureAxios from "@/utils/axiosConfig";
+import axios from "axios";
 import FilterProduct from "@/app/ui/FilterProduct";
 import StaticCardWithImage from "@/app/ui/StaticCardWithImage";
 import './index.scss';
 
+function getProductLists(){
+    ConfigureAxios();
+    axios.get('/public/feature-product/brand')
+    .then((response)=>{
+        console.log("Res",response)
+    }).catch((error)=>{
+
+    })
+}
 
 const IsotopeReact = () => {
   const isotope = useRef()
   // store the filter keyword in a state
-  const [filterKey, setFilterKey] = useState('*')
+    const [filterKey, setFilterKey] = useState('*')
+    const [products,setProducts]=useState([]);
+    // useEffect(()=>{
+    //     ConfigureAxios();
+    //     axios.get('/public/feature-product/brand')
+    //     .then((response)=>{
+    //         console.log("Res",response)
+    //     }).catch((error)=>{
 
+    //     })
+    // },[])
+    // useEffect(()=>{
+    //     console.log("Products : ",lists)
+       
+    // },[lists])
   // initialize an Isotope object with configs
   useEffect(() => {
     isotope.current = new Isotope('.filter-container', {
@@ -29,6 +53,7 @@ const IsotopeReact = () => {
     // cleanup
     return () => isotope.current.destroy()
   }, [])
+
 
   // handling filter key change
   useEffect(() => {
