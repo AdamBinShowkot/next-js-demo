@@ -1,8 +1,20 @@
-.home-featured-container{
-    padding: 80px 50px;
+.home-featured-main-row{
+    display: flex;
+    :first-child{
+        margin-left: 0 !important;
+    }
+    :last-child{
+        margin-right: 0 !important;
+    }
 }
 .home-featured-container{
-    width: 50%;
+    margin:20px 1% 40px 1%;
+    padding: 50px 50px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 10px 0px 0px 10px;
+}
+.home-featured-container{
+    width: 49%;
 }
 .home-featured-button{
     margin-bottom: 10px;
@@ -29,7 +41,7 @@
         padding: 80px 50px;
     }
     .home-featured-container{
-        width: 50%;
+        width: 49%;
     }
 }
 @media only screen and (min-width:1360px) {

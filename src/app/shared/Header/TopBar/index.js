@@ -73,8 +73,10 @@ const TopBarMain=()=>{
                             />
                         </Button>
                     </Col>
-                    <Col xs={2}>
-                        <Button
+                    <Col 
+                    className='header-social-container'
+                    xs={2}>
+                        {/* <Button
                         className='normal-social-button'
                         >
                             <Image
@@ -83,28 +85,47 @@ const TopBarMain=()=>{
                             height={16}
                             alt="search"
                             />
-                        </Button>
+                        </Button> */}
                     
-                        <Button
+                        {/* <Button
                         className='normal-social-button'
-                        >
-                            <Image
-                            src="/instagram.png"
-                            width={20}
-                            height={20}
-                            alt="search"
-                            />
-                        </Button>
-                        <Button
+                        > */}
+                        {/* <InputGroup>
+                            <InputGroupText
+                            className='normal-input global-search'
+                            > */}
+                                <Image
+                                className="header-social-image"
+                                src="/facebook.png"
+                                width={16}
+                                height={16}
+                                alt="search"
+                                />
+                            {/* </InputGroupText>
+                            <InputGroupText
+                            className='normal-input global-search'
+                            > */}
+                                <Image
+                                className="header-social-image"
+                                src="/instagram.png"
+                                width={20}
+                                height={20}
+                                alt="search"
+                                />
+                            {/* </InputGroupText>
+                        </InputGroup> */}
+                        {/* </Button> */}
+                        {/* <Button
                         className='normal-social-button'
-                        >
+                        > */}
                             <Image
+                            className="header-social-image"
                             src="/youtube.png"
                             width={22}
                             height={22}
                             alt="search"
                             />
-                        </Button>
+                        {/* </Button> */}
                     </Col>
                 </Row>
             </Col>
