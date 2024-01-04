@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-/next-js-demo.zip
+next-js-demo.zip
 
 # testing
 /coverage
