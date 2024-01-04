@@ -50,508 +50,509 @@ const HomeBlogSection=()=>{
                             </Col>
                         </Row>
                     </Col>
-                    <Col className="second grid-items">
+                    {/* <Col className="second grid-items"> */}
                     <Card
-                        style={{ 
-                            width: '100%',
-                            padding:'0',
-                            //margin:'0px',
-                            borderRadius:'5px'
+                    className="second grid-items"
+                    style={{ 
+                        width: '100%',
+                        padding:'0',
+                        //margin:'0px',
+                        borderRadius:'5px'
+                    }}
+                    >
+                        <Card.Body
+                        style={{
+                            padding:'25px 6px 20px'
                         }}
                         >
-                            <Card.Body
+                            <Row>
+                                <Col xs={12}>
+                                    <InputGroup>
+                                        <FormControl
+                                        className='normal-input'
+                                        placeholder='search here'
+                                        >
+
+                                        </FormControl>
+                                        <InputGroupText
+                                        className='normal-input global-search'
+                                        >
+                                            <Image
+                                            src="/search.png"
+                                            width={20}
+                                            height={20}
+                                            alt="search"
+                                            />
+                                        </InputGroupText>
+                                    </InputGroup>
+                                </Col>
+                            </Row>
+                            <Row
                             style={{
-                                padding:'6px'
+                                padding:'15px 0'
                             }}
                             >
-                                <Row>
-                                    <Col xs={12}>
-                                        <InputGroup>
-                                            <FormControl
-                                            className='normal-input'
-                                            placeholder='search here'
-                                            >
-
-                                            </FormControl>
-                                            <InputGroupText
-                                            className='normal-input global-search'
-                                            >
-                                                <Image
-                                                src="/search.png"
-                                                width={20}
-                                                height={20}
-                                                alt="search"
-                                                />
-                                            </InputGroupText>
-                                        </InputGroup>
-                                    </Col>
-                                </Row>
-                                <Row
-                                style={{
-                                    padding:'15px 0'
-                                }}
-                                >
-                                    <Col xs={7}>
-                                        <span style={{fontSize:'13px !important'}}><b>Find a Blog and video</b></span>
-                                    </Col>
-                                    <Col xs={5}>
-                                        <Form.Select
-                                        // style={{
-                                        //     width:'10%'
-                                        // }}
-                                        size="sm">
-                                            <option>All Video</option>
-                                        </Form.Select>
-                                    </Col>
-                                </Row>
-                                <Row
-                                >
-                                    <Col xs={12}>
-                                        <Row
+                                <Col xs={7}>
+                                    <span style={{fontSize:'13px !important'}}><b>Find a Blog and video</b></span>
+                                </Col>
+                                <Col xs={5}>
+                                    <Form.Select
+                                    // style={{
+                                    //     width:'10%'
+                                    // }}
+                                    size="sm">
+                                        <option>All Video</option>
+                                    </Form.Select>
+                                </Col>
+                            </Row>
+                            <Row
+                            >
+                                <Col xs={12}>
+                                    <Row
+                                    style={{
+                                        padding:'4px 0'
+                                    }}
+                                    >
+                                        <Col
+                                        xs={12}
                                         style={{
-                                            padding:'4px 0'
+                                            position:'relative'
                                         }}
                                         >
-                                            <Col
-                                            xs={12}
-                                            style={{
-                                                position:'relative'
-                                            }}
-                                            >
-                                                <InputGroup>
-                                                    <InputGroupText
-                                                    className='blog-tag-filter-button blog-tag-filter-button-active'
-                                                    >
-                                                        <div
-                                                        style={{
-                                                            width:'100%',
-                                                            display:'flex',
-                                                            justifyContent:'center',
-                                                            alignItems:'center'
-                                                        }}
-                                                        >
-                                                            <div
-                                                            style={{
-                                                                width:'80%',
-                                                                
-                                                            }}
-                                                            >
-                                                                <span
-                                                                style={{
-                                                                    marginRight:'10px'
-                                                                }}
-                                                                >
-                                                                    Body Care
-                                                                </span>
-                                                            </div>
-                                                            <div
-                                                            style={{
-                                                                width:'20%',
-                                                                textAlign:'right'
-                                                            }}
-                                                            >
-                                                                <Image
-                                                                src="/check.png"
-                                                                width={18}
-                                                                height={18}
-                                                                alt="search"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </InputGroupText>
-                                                    <InputGroupText
-                                                    style={{
-                                                        position:'absolute',
-                                                        right:'0'
-                                                    }}
-                                                    className='blog-tag-filter-button'
-                                                    >
-                                                        <div
-                                                        style={{
-                                                            width:'100%',
-                                                            display:'flex',
-                                                            justifyContent:'center',
-                                                            alignItems:'center'
-                                                        }}
-                                                        >
-                                                            <div
-                                                            style={{
-                                                                width:'80%',
-                                                                
-                                                            }}
-                                                            >
-                                                                <span
-                                                                style={{
-                                                                    marginRight:'10px'
-                                                                }}
-                                                                >
-                                                                    Eye Care
-                                                                </span>
-                                                            </div>
-                                                            <div
-                                                            style={{
-                                                                width:'20%',
-                                                                textAlign:'right'
-                                                            }}
-                                                            >
-                                                                <Image
-                                                                src="/plus.png"
-                                                                width={18}
-                                                                height={18}
-                                                                alt="search"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </InputGroupText>
-                                                </InputGroup>
-                                                
-                                                
-                                            </Col>
-                                        </Row> 
-                                        <Row
-                                        style={{
-                                            padding:'4px 0'
-                                        }}
-                                        >
-                                            <Col
-                                            xs={12}
-                                            style={{
-                                                position:'relative'
-                                            }}
-                                            >
-                                                <InputGroup>
-                                                    <InputGroupText
-                                                    className='blog-tag-filter-button'
-                                                    >
-                                                        <div
-                                                        style={{
-                                                            width:'100%',
-                                                            display:'flex',
-                                                            justifyContent:'center',
-                                                            alignItems:'center'
-                                                        }}
-                                                        >
-                                                            <div
-                                                            style={{
-                                                                width:'80%',
-                                                                
-                                                            }}
-                                                            >
-                                                                <span
-                                                                style={{
-                                                                    marginRight:'10px'
-                                                                }}
-                                                                >
-                                                                    Eye Care
-                                                                </span>
-                                                            </div>
-                                                            <div
-                                                            style={{
-                                                                width:'20%',
-                                                                textAlign:'right'
-                                                            }}
-                                                            >
-                                                                <Image
-                                                                src="/plus.png"
-                                                                width={18}
-                                                                height={18}
-                                                                alt="search"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </InputGroupText>
-                                                    <InputGroupText
-                                                    style={{
-                                                        position:'absolute',
-                                                        right:'0'
-                                                    }}
-                                                    className='blog-tag-filter-button'
-                                                    >
-                                                        <div
-                                                        style={{
-                                                            width:'100%',
-                                                            display:'flex',
-                                                            justifyContent:'center',
-                                                            alignItems:'center'
-                                                        }}
-                                                        >
-                                                            <div
-                                                            style={{
-                                                                width:'80%',
-                                                                
-                                                            }}
-                                                            >
-                                                                <span
-                                                                style={{
-                                                                    marginRight:'10px'
-                                                                }}
-                                                                >
-                                                                    Eye Care
-                                                                </span>
-                                                            </div>
-                                                            <div
-                                                            style={{
-                                                                width:'20%',
-                                                                textAlign:'right'
-                                                            }}
-                                                            >
-                                                                <Image
-                                                                src="/plus.png"
-                                                                width={18}
-                                                                height={18}
-                                                                alt="search"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </InputGroupText>
-                                                </InputGroup>
-                                                
-                                                
-                                            </Col>
-                                        </Row>
-                                        <Row
-                                        style={{
-                                            padding:'4px 0'
-                                        }}
-                                        >
-                                            <Col
-                                            xs={12}
-                                            style={{
-                                                position:'relative'
-                                            }}
-                                            >
-                                                <InputGroup>
-                                                    <InputGroupText
-                                                    className='blog-tag-filter-button'
-                                                    >
-                                                        <div
-                                                        style={{
-                                                            width:'100%',
-                                                            display:'flex',
-                                                            justifyContent:'center',
-                                                            alignItems:'center'
-                                                        }}
-                                                        >
-                                                            <div
-                                                            style={{
-                                                                width:'80%',
-                                                                
-                                                            }}
-                                                            >
-                                                                <span
-                                                                style={{
-                                                                    marginRight:'10px'
-                                                                }}
-                                                                >
-                                                                    Eye Care
-                                                                </span>
-                                                            </div>
-                                                            <div
-                                                            style={{
-                                                                width:'20%',
-                                                                textAlign:'right'
-                                                            }}
-                                                            >
-                                                                <Image
-                                                                src="/plus.png"
-                                                                width={18}
-                                                                height={18}
-                                                                alt="search"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </InputGroupText>
-                                                    <InputGroupText
-                                                    style={{
-                                                        position:'absolute',
-                                                        right:'0'
-                                                    }}
-                                                    className='blog-tag-filter-button'
-                                                    >
-                                                        <div
-                                                        style={{
-                                                            width:'100%',
-                                                            display:'flex',
-                                                            justifyContent:'center',
-                                                            alignItems:'center'
-                                                        }}
-                                                        >
-                                                            <div
-                                                            style={{
-                                                                width:'80%',
-                                                                
-                                                            }}
-                                                            >
-                                                                <span
-                                                                style={{
-                                                                    marginRight:'10px'
-                                                                }}
-                                                                >
-                                                                    Eye Care
-                                                                </span>
-                                                            </div>
-                                                            <div
-                                                            style={{
-                                                                width:'20%',
-                                                                textAlign:'right'
-                                                            }}
-                                                            >
-                                                                <Image
-                                                                src="/plus.png"
-                                                                width={18}
-                                                                height={18}
-                                                                alt="search"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </InputGroupText>
-                                                </InputGroup>
-                                                
-                                                
-                                            </Col>
-                                        </Row>
-                                        <Row
-                                        style={{
-                                            padding:'4px 0'
-                                        }}
-                                        >
-                                            <Col
-                                            xs={12}
-                                            style={{
-                                                position:'relative'
-                                            }}
-                                            >
-                                                <InputGroup>
-                                                    <InputGroupText
-                                                    className='blog-tag-filter-button'
-                                                    >
-                                                        <div
-                                                        style={{
-                                                            width:'100%',
-                                                            display:'flex',
-                                                            justifyContent:'center',
-                                                            alignItems:'center'
-                                                        }}
-                                                        >
-                                                            <div
-                                                            style={{
-                                                                width:'80%',
-                                                                
-                                                            }}
-                                                            >
-                                                                <span
-                                                                style={{
-                                                                    marginRight:'10px'
-                                                                }}
-                                                                >
-                                                                    Eye Care
-                                                                </span>
-                                                            </div>
-                                                            <div
-                                                            style={{
-                                                                width:'20%',
-                                                                textAlign:'right'
-                                                            }}
-                                                            >
-                                                                <Image
-                                                                src="/plus.png"
-                                                                width={18}
-                                                                height={18}
-                                                                alt="search"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </InputGroupText>
-                                                    <InputGroupText
-                                                    style={{
-                                                        position:'absolute',
-                                                        right:'0'
-                                                    }}
-                                                    className='blog-tag-filter-button'
-                                                    >
-                                                        <div
-                                                        style={{
-                                                            width:'100%',
-                                                            display:'flex',
-                                                            justifyContent:'center',
-                                                            alignItems:'center'
-                                                        }}
-                                                        >
-                                                            <div
-                                                            style={{
-                                                                width:'80%',
-                                                                
-                                                            }}
-                                                            >
-                                                                <span
-                                                                style={{
-                                                                    marginRight:'10px'
-                                                                }}
-                                                                >
-                                                                    Eye Care
-                                                                </span>
-                                                            </div>
-                                                            <div
-                                                            style={{
-                                                                width:'20%',
-                                                                textAlign:'right'
-                                                            }}
-                                                            >
-                                                                <Image
-                                                                src="/plus.png"
-                                                                width={18}
-                                                                height={18}
-                                                                alt="search"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </InputGroupText>
-                                                </InputGroup>
-                                                
-                                                
-                                            </Col>
-                                        </Row>
-                                        <hr
-                                        style={{
-                                            margin:'30px 0'
-                                        }}
-                                        />
-                                        <Row
-                                        style={{
-                                            padding:'0px 0px 10px 0px'
-                                        }}
-                                        >
-                                            <Col xs={12}>
-                                                <Button
-                                                className="blog-full-width-button"
+                                            <InputGroup>
+                                                <InputGroupText
+                                                className='blog-tag-filter-button blog-tag-filter-button-active'
                                                 >
-                                                    Skin Care Blog
-                                                </Button>
-                                            </Col>
-                                        </Row>
-                                        <Row
+                                                    <div
+                                                    style={{
+                                                        width:'100%',
+                                                        display:'flex',
+                                                        justifyContent:'center',
+                                                        alignItems:'center'
+                                                    }}
+                                                    >
+                                                        <div
+                                                        style={{
+                                                            width:'80%',
+                                                            
+                                                        }}
+                                                        >
+                                                            <span
+                                                            style={{
+                                                                marginRight:'10px'
+                                                            }}
+                                                            >
+                                                                Body Care
+                                                            </span>
+                                                        </div>
+                                                        <div
+                                                        style={{
+                                                            width:'20%',
+                                                            textAlign:'right'
+                                                        }}
+                                                        >
+                                                            <Image
+                                                            src="/check.png"
+                                                            width={18}
+                                                            height={18}
+                                                            alt="search"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </InputGroupText>
+                                                <InputGroupText
+                                                style={{
+                                                    position:'absolute',
+                                                    right:'0'
+                                                }}
+                                                className='blog-tag-filter-button'
+                                                >
+                                                    <div
+                                                    style={{
+                                                        width:'100%',
+                                                        display:'flex',
+                                                        justifyContent:'center',
+                                                        alignItems:'center'
+                                                    }}
+                                                    >
+                                                        <div
+                                                        style={{
+                                                            width:'80%',
+                                                            
+                                                        }}
+                                                        >
+                                                            <span
+                                                            style={{
+                                                                marginRight:'10px'
+                                                            }}
+                                                            >
+                                                                Eye Care
+                                                            </span>
+                                                        </div>
+                                                        <div
+                                                        style={{
+                                                            width:'20%',
+                                                            textAlign:'right'
+                                                        }}
+                                                        >
+                                                            <Image
+                                                            src="/plus.png"
+                                                            width={18}
+                                                            height={18}
+                                                            alt="search"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </InputGroupText>
+                                            </InputGroup>
+                                            
+                                            
+                                        </Col>
+                                    </Row> 
+                                    <Row
+                                    style={{
+                                        padding:'4px 0'
+                                    }}
+                                    >
+                                        <Col
+                                        xs={12}
                                         style={{
-                                            padding:'10px 0px'
+                                            position:'relative'
                                         }}
                                         >
-                                            <Col xs={12}>
-                                               <BlogPost isChecked={true} isNew={true}/>
-                                            </Col>
-                                        </Row>
-                                        <Row
+                                            <InputGroup>
+                                                <InputGroupText
+                                                className='blog-tag-filter-button'
+                                                >
+                                                    <div
+                                                    style={{
+                                                        width:'100%',
+                                                        display:'flex',
+                                                        justifyContent:'center',
+                                                        alignItems:'center'
+                                                    }}
+                                                    >
+                                                        <div
+                                                        style={{
+                                                            width:'80%',
+                                                            
+                                                        }}
+                                                        >
+                                                            <span
+                                                            style={{
+                                                                marginRight:'10px'
+                                                            }}
+                                                            >
+                                                                Eye Care
+                                                            </span>
+                                                        </div>
+                                                        <div
+                                                        style={{
+                                                            width:'20%',
+                                                            textAlign:'right'
+                                                        }}
+                                                        >
+                                                            <Image
+                                                            src="/plus.png"
+                                                            width={18}
+                                                            height={18}
+                                                            alt="search"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </InputGroupText>
+                                                <InputGroupText
+                                                style={{
+                                                    position:'absolute',
+                                                    right:'0'
+                                                }}
+                                                className='blog-tag-filter-button'
+                                                >
+                                                    <div
+                                                    style={{
+                                                        width:'100%',
+                                                        display:'flex',
+                                                        justifyContent:'center',
+                                                        alignItems:'center'
+                                                    }}
+                                                    >
+                                                        <div
+                                                        style={{
+                                                            width:'80%',
+                                                            
+                                                        }}
+                                                        >
+                                                            <span
+                                                            style={{
+                                                                marginRight:'10px'
+                                                            }}
+                                                            >
+                                                                Eye Care
+                                                            </span>
+                                                        </div>
+                                                        <div
+                                                        style={{
+                                                            width:'20%',
+                                                            textAlign:'right'
+                                                        }}
+                                                        >
+                                                            <Image
+                                                            src="/plus.png"
+                                                            width={18}
+                                                            height={18}
+                                                            alt="search"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </InputGroupText>
+                                            </InputGroup>
+                                            
+                                            
+                                        </Col>
+                                    </Row>
+                                    <Row
+                                    style={{
+                                        padding:'4px 0'
+                                    }}
+                                    >
+                                        <Col
+                                        xs={12}
                                         style={{
-                                            padding:'10px 0px'
+                                            position:'relative'
                                         }}
                                         >
-                                            <Col xs={12}>
-                                               <BlogPost isChecked={true} isNew={true}/>
-                                            </Col>
-                                        </Row>
-                                    </Col>
-                                </Row>
-                            </Card.Body>
-                        </Card>   
-                    </Col>
+                                            <InputGroup>
+                                                <InputGroupText
+                                                className='blog-tag-filter-button'
+                                                >
+                                                    <div
+                                                    style={{
+                                                        width:'100%',
+                                                        display:'flex',
+                                                        justifyContent:'center',
+                                                        alignItems:'center'
+                                                    }}
+                                                    >
+                                                        <div
+                                                        style={{
+                                                            width:'80%',
+                                                            
+                                                        }}
+                                                        >
+                                                            <span
+                                                            style={{
+                                                                marginRight:'10px'
+                                                            }}
+                                                            >
+                                                                Eye Care
+                                                            </span>
+                                                        </div>
+                                                        <div
+                                                        style={{
+                                                            width:'20%',
+                                                            textAlign:'right'
+                                                        }}
+                                                        >
+                                                            <Image
+                                                            src="/plus.png"
+                                                            width={18}
+                                                            height={18}
+                                                            alt="search"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </InputGroupText>
+                                                <InputGroupText
+                                                style={{
+                                                    position:'absolute',
+                                                    right:'0'
+                                                }}
+                                                className='blog-tag-filter-button'
+                                                >
+                                                    <div
+                                                    style={{
+                                                        width:'100%',
+                                                        display:'flex',
+                                                        justifyContent:'center',
+                                                        alignItems:'center'
+                                                    }}
+                                                    >
+                                                        <div
+                                                        style={{
+                                                            width:'80%',
+                                                            
+                                                        }}
+                                                        >
+                                                            <span
+                                                            style={{
+                                                                marginRight:'10px'
+                                                            }}
+                                                            >
+                                                                Eye Care
+                                                            </span>
+                                                        </div>
+                                                        <div
+                                                        style={{
+                                                            width:'20%',
+                                                            textAlign:'right'
+                                                        }}
+                                                        >
+                                                            <Image
+                                                            src="/plus.png"
+                                                            width={18}
+                                                            height={18}
+                                                            alt="search"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </InputGroupText>
+                                            </InputGroup>
+                                            
+                                            
+                                        </Col>
+                                    </Row>
+                                    <Row
+                                    style={{
+                                        padding:'4px 0'
+                                    }}
+                                    >
+                                        <Col
+                                        xs={12}
+                                        style={{
+                                            position:'relative'
+                                        }}
+                                        >
+                                            <InputGroup>
+                                                <InputGroupText
+                                                className='blog-tag-filter-button'
+                                                >
+                                                    <div
+                                                    style={{
+                                                        width:'100%',
+                                                        display:'flex',
+                                                        justifyContent:'center',
+                                                        alignItems:'center'
+                                                    }}
+                                                    >
+                                                        <div
+                                                        style={{
+                                                            width:'80%',
+                                                            
+                                                        }}
+                                                        >
+                                                            <span
+                                                            style={{
+                                                                marginRight:'10px'
+                                                            }}
+                                                            >
+                                                                Eye Care
+                                                            </span>
+                                                        </div>
+                                                        <div
+                                                        style={{
+                                                            width:'20%',
+                                                            textAlign:'right'
+                                                        }}
+                                                        >
+                                                            <Image
+                                                            src="/plus.png"
+                                                            width={18}
+                                                            height={18}
+                                                            alt="search"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </InputGroupText>
+                                                <InputGroupText
+                                                style={{
+                                                    position:'absolute',
+                                                    right:'0'
+                                                }}
+                                                className='blog-tag-filter-button'
+                                                >
+                                                    <div
+                                                    style={{
+                                                        width:'100%',
+                                                        display:'flex',
+                                                        justifyContent:'center',
+                                                        alignItems:'center'
+                                                    }}
+                                                    >
+                                                        <div
+                                                        style={{
+                                                            width:'80%',
+                                                            
+                                                        }}
+                                                        >
+                                                            <span
+                                                            style={{
+                                                                marginRight:'10px'
+                                                            }}
+                                                            >
+                                                                Eye Care
+                                                            </span>
+                                                        </div>
+                                                        <div
+                                                        style={{
+                                                            width:'20%',
+                                                            textAlign:'right'
+                                                        }}
+                                                        >
+                                                            <Image
+                                                            src="/plus.png"
+                                                            width={18}
+                                                            height={18}
+                                                            alt="search"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </InputGroupText>
+                                            </InputGroup>
+                                            
+                                            
+                                        </Col>
+                                    </Row>
+                                    <hr
+                                    style={{
+                                        margin:'30px 0'
+                                    }}
+                                    />
+                                    <Row
+                                    style={{
+                                        padding:'0px 0px 10px 0px'
+                                    }}
+                                    >
+                                        <Col xs={12}>
+                                            <Button
+                                            className="blog-full-width-button"
+                                            >
+                                                Skin Care Blog
+                                            </Button>
+                                        </Col>
+                                    </Row>
+                                    <Row
+                                    style={{
+                                        padding:'10px 0px'
+                                    }}
+                                    >
+                                        <Col xs={12}>
+                                            <BlogPost isChecked={true} isNew={true}/>
+                                        </Col>
+                                    </Row>
+                                    <Row
+                                    style={{
+                                        padding:'10px 0px'
+                                    }}
+                                    >
+                                        <Col xs={12}>
+                                            <BlogPost isChecked={true} isNew={true}/>
+                                        </Col>
+                                    </Row>
+                                </Col>
+                            </Row>
+                        </Card.Body>
+                    </Card>   
+                    {/* </Col> */}
                     <Col className="third grid-items">
                     <Row
                         style={{
