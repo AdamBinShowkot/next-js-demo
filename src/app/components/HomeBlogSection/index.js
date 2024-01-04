@@ -23,11 +23,7 @@ const HomeBlogSection=()=>{
                 <Row
                 className="home-blog-container"
                 >
-                    <Col 
-                    xs={12}
-                    xl={9}
-                    className="column-9"
-                    >
+                    <Col className="first grid-items">
                         <Row
                         style={{
                             height:'300px',
@@ -53,157 +49,9 @@ const HomeBlogSection=()=>{
                                 </Button>
                             </Col>
                         </Row>
-                        <Row
-                        style={{
-                            padding:'20px 0'
-                        }}
-                        >
-                            <Col 
-                            xs={6}
-                            style={{
-                                padding:'0'
-                            }}
-                            >
-                                <Row>
-                                    <Col 
-                                    xs={6}
-                                   
-                                    >
-                                        <span><b>Video</b></span>
-                                    </Col>
-                                    <Col 
-                                    xs={6}
-                                    
-                                    >
-                                        <span>| 12 video</span>
-                                    </Col>
-                                </Row>
-                            </Col>
-                            <Col 
-                            xs={6}
-                            style={{
-                                textAlign:'right',
-                                justifyContent:'flex-end'
-                            }}
-                            >
-                                {/* <Form.Select
-                                style={{
-                                    width:'10%'
-                                }}
-                                size="sm">
-                                    <option>All Video</option>
-                                </Form.Select> */}
-                            </Col>
-                        </Row>
-                        <Row
-                        style={{
-                            padding:'0px'
-                        }}
-                        >
-                            <Col 
-                            xs={4}
-                            style={{
-                                padding:'6px'
-                            }}
-                            >
-                                <BlogVideo/>
-                            </Col>
-                            <Col 
-                            xs={4}
-                            style={{
-                                padding:'6px'
-                            }}
-                            >
-                                <BlogVideo image={'sVideo2.png'}/>
-                            </Col>
-                            <Col 
-                            xs={4}
-                            style={{
-                                padding:'6px'
-                            }}
-                            >
-                                <BlogVideo image={'sVideo1.png'}/>
-                            </Col>
-                        </Row>
-                        <Row
-                        style={{
-                            padding:'20px 0'
-                        }}
-                        >
-                            <Col 
-                            xs={6}
-                            style={{
-                                padding:'0'
-                            }}
-                            >
-                                <Row>
-                                    <Col 
-                                    xs={6}
-                                   
-                                    >
-                                        <span><b>Recent Post</b></span>
-                                    </Col>
-                                    <Col 
-                                    xs={6}
-                                    
-                                    >
-                                        <span>| 12 video</span>
-                                    </Col>
-                                </Row>
-                            </Col>
-                            <Col 
-                            xs={6}
-                            style={{
-                                textAlign:'right',
-                                justifyContent:'flex-end'
-                            }}
-                            >
-                                {/* <Form.Select
-                                style={{
-                                    width:'10%'
-                                }}
-                                size="sm">
-                                    <option>All Video</option>
-                                </Form.Select> */}
-                            </Col>
-                        </Row>
-                        <Row
-                        style={{
-                            padding:'0px'
-                        }}
-                        >
-                            <Col 
-                            xs={4}
-                            style={{
-                                padding:'6px'
-                            }}
-                            >
-                               <BlogPost/>
-                            </Col>
-                            <Col 
-                            xs={4}
-                            style={{
-                                padding:'6px'
-                            }}
-                            >
-                                <BlogPost/>
-                            </Col>
-                            <Col 
-                            xs={4}
-                            style={{
-                                padding:'6px'
-                            }}
-                            >
-                                <BlogPost/>
-                            </Col>
-                        </Row>
                     </Col>
-                    <Col 
-                    xs={12}
-                    xl={3}
-                    className="column-3"
-                    >
-                        <Card
+                    <Col className="second grid-items">
+                    <Card
                         style={{ 
                             width: '100%',
                             padding:'0',
@@ -702,8 +550,154 @@ const HomeBlogSection=()=>{
                                     </Col>
                                 </Row>
                             </Card.Body>
-                        </Card>
+                        </Card>   
                     </Col>
+                    <Col className="third grid-items">
+                    <Row
+                        style={{
+                            padding:'20px 0'
+                        }}
+                        >
+                            <Col 
+                            xs={6}
+                            style={{
+                                padding:'0'
+                            }}
+                            >
+                                <Row>
+                                    <Col 
+                                    xs={6}
+                                   
+                                    >
+                                        <span><b>Video</b></span>
+                                    </Col>
+                                    <Col 
+                                    xs={6}
+                                    
+                                    >
+                                        <span>| 12 video</span>
+                                    </Col>
+                                </Row>
+                            </Col>
+                            <Col 
+                            xs={6}
+                            style={{
+                                textAlign:'right',
+                                justifyContent:'flex-end'
+                            }}
+                            >
+                                {/* <Form.Select
+                                style={{
+                                    width:'10%'
+                                }}
+                                size="sm">
+                                    <option>All Video</option>
+                                </Form.Select> */}
+                            </Col>
+                        </Row>
+                        <Row
+                        style={{
+                            padding:'0px'
+                        }}
+                        >
+                            <Col 
+                            xs={4}
+                            style={{
+                                padding:'6px'
+                            }}
+                            >
+                                <BlogVideo/>
+                            </Col>
+                            <Col 
+                            xs={4}
+                            style={{
+                                padding:'6px'
+                            }}
+                            >
+                                <BlogVideo image={'sVideo2.png'}/>
+                            </Col>
+                            <Col 
+                            xs={4}
+                            style={{
+                                padding:'6px'
+                            }}
+                            >
+                                <BlogVideo image={'sVideo1.png'}/>
+                            </Col>
+                        </Row>
+                        <Row
+                        style={{
+                            padding:'20px 0'
+                        }}
+                        >
+                            <Col 
+                            xs={6}
+                            style={{
+                                padding:'0'
+                            }}
+                            >
+                                <Row>
+                                    <Col 
+                                    xs={6}
+                                   
+                                    >
+                                        <span><b>Recent Post</b></span>
+                                    </Col>
+                                    <Col 
+                                    xs={6}
+                                    
+                                    >
+                                        <span>| 12 video</span>
+                                    </Col>
+                                </Row>
+                            </Col>
+                            <Col 
+                            xs={6}
+                            style={{
+                                textAlign:'right',
+                                justifyContent:'flex-end'
+                            }}
+                            >
+                                {/* <Form.Select
+                                style={{
+                                    width:'10%'
+                                }}
+                                size="sm">
+                                    <option>All Video</option>
+                                </Form.Select> */}
+                            </Col>
+                        </Row>
+                        <Row
+                        style={{
+                            padding:'0px'
+                        }}
+                        >
+                            <Col 
+                            xs={4}
+                            style={{
+                                padding:'6px'
+                            }}
+                            >
+                               <BlogPost/>
+                            </Col>
+                            <Col 
+                            xs={4}
+                            style={{
+                                padding:'6px'
+                            }}
+                            >
+                                <BlogPost/>
+                            </Col>
+                            <Col 
+                            xs={4}
+                            style={{
+                                padding:'6px'
+                            }}
+                            >
+                                <BlogPost/>
+                            </Col>
+                        </Row>
+                   </Col>
                 </Row>
             </Container>
         </>

@@ -30,7 +30,7 @@ async function getBrandProductLists(){
   ConfigureAxios();
   const response=axios.get('/public/feature-product/brand').then((res)=>{
       if(res.status===200){
-          console.log("Products : ",res.data);
+          //console.log("Products : ",res.data);
           return res.data;
       }
   });
