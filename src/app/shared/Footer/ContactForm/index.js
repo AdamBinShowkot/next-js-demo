@@ -17,19 +17,12 @@ const ContactFormMain=()=>{
         <>
             <Col>
                 <Row
-                style={{
-                    display:'flex',
-                    justifyContent:'center',
-                    alignItems:'center'
-                }}
+                className='contact-footer-form-container'
                 >
                     <Col
-                    style={{
-                        textAlign:'left',
-                        display:'flex',
-                        // justifyContent:'start',
-                        alignItems:'center !important'
-                    }}
+                    className='contact-footer-form first'
+                    xl={6}
+                    xs={12}
                     >
                         <Image
                         src='/messageBox.png'
@@ -46,6 +39,9 @@ const ContactFormMain=()=>{
                     style={{
                         textAlign:'right'
                     }}
+                    xl={6}
+                    xs={12}
+                    className='contact-footer-form second'
                     >
                         <InputGroup>
                             <FormControl

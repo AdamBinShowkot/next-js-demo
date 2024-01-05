@@ -159,6 +159,7 @@ ul li{
 /***  Flat Button CSS ***/
 .fixed-button {
   position: fixed;
+  display: block;
   bottom: 20%; /* Adjust the distance from the bottom as needed */
   right: 0; /* Adjust the distance from the right as needed */
 /* Set the background color */
@@ -209,6 +210,9 @@ ul li{
 /*** RESPONSIVE AREA ***/
 @media only screen and (max-width:480px) {
   
+  .fixed-button{
+    display: none;
+  }
   .slider-next-arrow-btn{
     height: 28px !important;
     width: 28px !important;
@@ -232,6 +236,9 @@ ul li{
 
 }
 @media only screen and (min-width:980px) {
+  .fixed-button{
+    display: block;
+  }
   .home-page-inner-container{
     display:flex;
     justify-content:center;
