@@ -31,6 +31,10 @@ const IsotopeReact = ({lists}) => {
   // store the filter keyword in a state
     const [filterKey, setFilterKey] = useState('*')
     const [products,setProducts]=useState([]);
+    const [cosrxLists,setCosrxLists]=useState([]);
+    const [neogenLists,setNeogenLists]=useState([]);
+    const [tiamLists,setTiamLists]=useState([]);
+    const [sumBymiLists,setSumBymiLists]=useState([]);
     // useEffect(()=>{
     //     ConfigureAxios();
     //     axios.get('/public/feature-product/brand')
@@ -40,10 +44,6 @@ const IsotopeReact = ({lists}) => {
 
     //     })
     // },[])
-    useEffect(()=>{
-        console.log("Products : ",lists)
-       
-    },[lists])
   // initialize an Isotope object with configs
   useEffect(() => {
     isotope.current = new Isotope('.filter-container', {
@@ -61,6 +61,23 @@ const IsotopeReact = ({lists}) => {
       ? isotope.current.arrange({filter: `*`})
       : isotope.current.arrange({filter: `.${filterKey}`})
   }, [filterKey])
+
+  useEffect(()=>{
+    if(lists.length){
+        lists.map((dta)=>{
+            if(dta.name=="Neogen"){
+                if(dta?.products?.length){
+                    setNeogenLists(dta.products);
+                }
+            }else if(dta.name=="COSRX"){
+                if(dta?.products?.length){
+                    setCosrxLists(dta.products);
+                }
+            }
+        })
+    }
+   console.log(lists)
+},[lists])
 
   const handleFilterKeyChange = key => () => setFilterKey(key)
 
@@ -108,12 +125,14 @@ const IsotopeReact = ({lists}) => {
                             <Button
                             variant="outline-primary"
                             className="filter-button"
+                            onClick={handleFilterKeyChange('cosrx')}
                             >
                                 COSRX
                             </Button>
                             <Button
                             variant="outline-primary"
                             className="filter-button"
+                            onClick={handleFilterKeyChange('neogen')}
                             >
                                 NEOGEN
                             </Button>
@@ -146,10 +165,38 @@ const IsotopeReact = ({lists}) => {
                         <li onClick={handleFilterKeyChange('fruit')}>Show Fruits</li>
                     </ul> */}
                         <Row className="filter-container">
+                            {/* {
+                                cosrxLists?.length?cosrxLists.map((dta)=>{
+                                    return  <Col 
+                                    xs={3} 
+                                    key={dta.id}  
+                                    className="filter-item fruit"
+                                    >
+                                        <FilterProduct/>
+                                        
+                                    </Col>
+                                }):""
+                            } */}
+                            {
+                                neogenLists?.length?neogenLists.map((dta,index)=>{
+                                    if(index==3){
+                                        return "";
+                                    }else{
+                                       return  <Col 
+                                       xs={3} 
+                                       //key={dta.id}  
+                                       className="filter-item vege"
+                                       >
+                                           <StaticCardWithImage/>
+                                           
+                                       </Col>
+                                    }
+                                }):""
+                            }
                             <Col xs={3} className="filter-item vege ">
                                 <StaticCardWithImage/>
                             </Col>
-                            <Col xs={3} className="filter-item fruit">
+                            {/* <Col xs={3} className="filter-item fruit">
                                 <FilterProduct/>
                             </Col>
                             <Col xs={3} className="filter-item fruit">
@@ -157,7 +204,7 @@ const IsotopeReact = ({lists}) => {
                             </Col>
                             <Col xs={3} className="filter-item fruit">
                                 <FilterProduct/>
-                            </Col>
+                            </Col> */}
                         </Row>
                 </Col>
             </Row>

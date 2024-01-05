@@ -25,6 +25,7 @@ const BannerThree=()=>{
                     >
                         <Col 
                         xs={4}
+                        xl={4}
                         >
                             <Button
                             className='banner-three-button'
@@ -34,6 +35,7 @@ const BannerThree=()=>{
                         </Col>
                         <Col 
                         xs={4}
+                        xl={4}
                         className='middle-column column'
                         >
                             <Image
@@ -45,6 +47,7 @@ const BannerThree=()=>{
                         </Col>
                         <Col 
                         xs={4}
+                        xl={4}
                         className='column'
                         >
                             <Button

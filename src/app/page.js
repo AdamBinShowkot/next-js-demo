@@ -27,20 +27,19 @@ async function getBodyCareLists(){
   return response;
 }
 async function getBrandProductLists(){
-  // ConfigureAxios();
-  // const response=axios.get('/public/feature-product/brand').then((res)=>{
-  //     if(res.status===200){
-  //         //console.log("Products : ",res.data);
-  //         return res.data;
-  //     }
-  // });
-  const response=[];
+  ConfigureAxios();
+  const response=axios.get('/public/feature-product/brand').then((res)=>{
+      if(res.status===200){
+          //console.log("Products : ",res.data);
+          return res.data;
+      }
+  });
 
   return response;
 }
 export default async function Home() {
-  // const brandLists=await getBrandProductLists();
-  const brandLists=[];
+  const brandLists=await getBrandProductLists();
+ // const brandLists=[];
   //const bodyCareDataLists= await getBodyCareLists();
   //console.log(bodyCareDataLists)
   //const test = useSize();

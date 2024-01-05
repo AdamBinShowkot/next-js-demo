@@ -8,7 +8,7 @@
         display:flex;
         justify-content:center;
         align-items:center;
-        height:100px;
+        height:100px; 
         .column{
             padding:auto 30px;
         }
@@ -54,7 +54,7 @@
         .banner-three-row{
             height:100px;
             .middle-column{
-                width: 100vw !important;
+                width: 33% !important;
             }
             .column{
                 padding:auto 30px;
